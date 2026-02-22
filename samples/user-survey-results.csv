@@ -1,0 +1,31 @@
+respondent_id,signup_date,plan,company_size,role,usage_frequency,satisfaction_score,nps_score,top_feature_used,biggest_pain_point,would_recommend,monthly_active_days,onboarding_completed,support_tickets
+R001,2025-11-03,Pro,51-200,Product Manager,Daily,4,9,Dashboard Analytics,Slow loading times,Yes,22,Yes,0
+R002,2025-11-05,Free,1-10,Founder,Weekly,3,6,Task Management,Limited integrations,Maybe,8,Yes,1
+R003,2025-11-08,Pro,201-500,Engineering Manager,Daily,5,10,API Access,None,Yes,25,Yes,0
+R004,2025-11-10,Free,11-50,Designer,Monthly,2,3,Template Library,Confusing UI,No,3,No,2
+R005,2025-11-12,Enterprise,500+,VP Product,Daily,4,8,Custom Reports,Pricing too high,Yes,20,Yes,0
+R006,2025-11-15,Pro,51-200,Data Analyst,Daily,5,9,Dashboard Analytics,Missing export options,Yes,24,Yes,0
+R007,2025-11-18,Free,1-10,Solo PM,Weekly,3,5,Task Management,No mobile app,Maybe,6,No,3
+R008,2025-11-20,Pro,11-50,Product Manager,Daily,4,8,Roadmap View,Slow loading times,Yes,18,Yes,1
+R009,2025-11-22,Enterprise,500+,Director of Product,Weekly,4,7,Custom Reports,Complex onboarding,Yes,12,Yes,0
+R010,2025-11-25,Free,1-10,Startup PM,Monthly,2,4,Task Management,Limited features on free plan,No,4,No,2
+R011,2025-12-01,Pro,201-500,Senior PM,Daily,5,10,Dashboard Analytics,None,Yes,26,Yes,0
+R012,2025-12-03,Free,11-50,Junior PM,Weekly,3,6,Template Library,Hard to customize,Maybe,7,Yes,1
+R013,2025-12-05,Enterprise,500+,CPO,Weekly,4,8,API Access,Slow customer support,Yes,15,Yes,0
+R014,2025-12-08,Pro,51-200,Product Manager,Daily,4,9,Roadmap View,Missing Jira integration,Yes,21,Yes,0
+R015,2025-12-10,Free,1-10,Aspiring PM,Monthly,1,2,Template Library,Too complex for beginners,No,2,No,4
+R016,2025-12-12,Pro,11-50,Growth PM,Daily,5,9,Dashboard Analytics,No A/B test tracking,Yes,23,Yes,0
+R017,2025-12-15,Enterprise,201-500,VP Engineering,Weekly,3,7,API Access,Documentation unclear,Maybe,10,Yes,1
+R018,2025-12-18,Free,1-10,Freelance PM,Weekly,3,5,Task Management,No team collaboration,Maybe,5,No,2
+R019,2025-12-20,Pro,51-200,Product Designer,Daily,4,8,Template Library,Limited design tools,Yes,19,Yes,0
+R020,2025-12-22,Enterprise,500+,Head of Product,Daily,5,10,Custom Reports,Need SSO,Yes,24,Yes,0
+R021,2025-12-25,Pro,201-500,Technical PM,Daily,4,8,API Access,Rate limiting issues,Yes,20,Yes,1
+R022,2025-12-28,Free,11-50,Marketing PM,Monthly,2,4,Roadmap View,No marketing integrations,No,3,No,3
+R023,2026-01-02,Pro,51-200,Product Manager,Daily,5,9,Dashboard Analytics,Wish for AI features,Yes,22,Yes,0
+R024,2026-01-05,Enterprise,500+,Director PMO,Weekly,4,7,Custom Reports,Expensive for large teams,Yes,14,Yes,0
+R025,2026-01-08,Free,1-10,Student,Monthly,2,3,Template Library,No student discount,No,2,No,1
+R026,2026-01-10,Pro,11-50,Product Manager,Daily,4,8,Task Management,Notification overload,Yes,17,Yes,1
+R027,2026-01-12,Enterprise,201-500,CTO,Weekly,3,6,API Access,Lacks enterprise audit logs,Maybe,9,Yes,0
+R028,2026-01-15,Pro,51-200,UX Researcher,Weekly,4,8,Dashboard Analytics,No qualitative data support,Yes,11,Yes,0
+R029,2026-01-18,Free,1-10,Indie Hacker,Monthly,3,5,Task Management,Limited automation,Maybe,5,No,2
+R030,2026-01-20,Pro,201-500,Senior PM,Daily,5,10,Roadmap View,Perfect for our needs,Yes,25,Yes,0

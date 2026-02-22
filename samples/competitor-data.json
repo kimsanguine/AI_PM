@@ -1,0 +1,70 @@
+{
+  "analysis_date": "2026-02-15",
+  "our_product": "PlanMyDay",
+  "competitors": [
+    {
+      "name": "TaskFlow Pro",
+      "website": "taskflowpro.com",
+      "founded": 2021,
+      "funding": "$25M Series B",
+      "estimated_arr": "$15M",
+      "pricing": {
+        "free": { "price": 0, "users": 3, "features": ["Basic tasks", "Calendar view"] },
+        "team": { "price": 12, "per": "user/month", "features": ["Unlimited users", "Roadmap", "Integrations"] },
+        "enterprise": { "price": 35, "per": "user/month", "features": ["SSO", "Audit logs", "Custom fields", "API"] }
+      },
+      "strengths": ["Beautiful UI", "Fast onboarding", "Strong mobile app"],
+      "weaknesses": ["No analytics", "Limited API", "No custom workflows"],
+      "target_market": "SMB product teams",
+      "g2_rating": 4.6,
+      "g2_reviews": 420,
+      "key_differentiator": "Design-first approach, Figma-like experience"
+    },
+    {
+      "name": "MetricBoard",
+      "website": "metricboard.io",
+      "founded": 2019,
+      "funding": "$45M Series C",
+      "estimated_arr": "$30M",
+      "pricing": {
+        "starter": { "price": 15, "per": "user/month", "features": ["Dashboard", "KPI tracking", "5 integrations"] },
+        "growth": { "price": 29, "per": "user/month", "features": ["Advanced analytics", "A/B tracking", "Unlimited integrations"] },
+        "enterprise": { "price": 59, "per": "user/month", "features": ["Custom ML models", "Data warehouse", "Dedicated CSM"] }
+      },
+      "strengths": ["Deep analytics", "Data warehouse integration", "Enterprise-ready"],
+      "weaknesses": ["Complex setup", "Steep learning curve", "Expensive", "Slow UI"],
+      "target_market": "Enterprise data-driven teams",
+      "g2_rating": 4.3,
+      "g2_reviews": 280,
+      "key_differentiator": "Analytics depth, ML-powered insights"
+    },
+    {
+      "name": "ShipIt",
+      "website": "shipit.dev",
+      "founded": 2023,
+      "funding": "$8M Seed",
+      "estimated_arr": "$3M",
+      "pricing": {
+        "free": { "price": 0, "users": "unlimited", "features": ["Basic PM tools", "GitHub sync"] },
+        "pro": { "price": 9, "per": "user/month", "features": ["AI features", "Sprint planning", "Slack bot"] },
+        "team": { "price": 19, "per": "user/month", "features": ["Custom agents", "Automation", "Priority support"] }
+      },
+      "strengths": ["AI-native", "Developer-friendly", "Fast iteration", "Low price"],
+      "weaknesses": ["Young product", "Limited enterprise features", "Small team", "No mobile app"],
+      "target_market": "Startup engineering teams",
+      "g2_rating": 4.7,
+      "g2_reviews": 85,
+      "key_differentiator": "AI-first PM tool, Claude Code integration"
+    }
+  ],
+  "market_context": {
+    "tam": "$12B (Product Management Software)",
+    "growth_rate": "14% CAGR",
+    "key_trends": [
+      "AI-native tools replacing legacy PM software",
+      "Convergence of PM and engineering workflows",
+      "Shift from output metrics to outcome metrics",
+      "Rise of solo/fractional PMs needing lightweight tools"
+    ]
+  }
+}
