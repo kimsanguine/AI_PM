@@ -2,11 +2,57 @@
 
 > **"도구를 배우는 것이 아니라, PM의 일하는 방식을 재설계한다."**
 
+![Stars](https://img.shields.io/github/stars/kimsanguine/AI_PM?style=social)
+![Forks](https://img.shields.io/github/forks/kimsanguine/AI_PM?style=social)
+![Last Commit](https://img.shields.io/github/last-commit/kimsanguine/AI_PM)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ---
 
+## 학습 경로
+
+이 가이드는 아래 시리즈의 세 번째 단계입니다.
+
+```
+[AI_Human]          →      [AI_Engineer]        →      [AI_PM]  ← 지금 여기
+ 초급 · 100일 과정          중급 · 100 Agents           실전 · 워크플로우 재설계
+ Python~RAG 기초            AI Agent 직접 구현           PM의 일하는 방식을 바꾸다
+```
+
+---
+
+## 전체 구조
+
+```mermaid
+graph LR
+    A[Part 1-3<br/>기초 & 설정] --> B[Part 4<br/>Discovery]
+    B --> C[Part 5<br/>Definition]
+    C --> D[Part 6<br/>Delivery]
+    D --> E[Part 7<br/>Growth]
+    E --> F[Part 8<br/>전략]
+    F -.-> B
+
+    style A fill:#f0f0f0,stroke:#333
+    style B fill:#e1f5fe,stroke:#0288d1
+    style C fill:#e8f5e9,stroke:#388e3c
+    style D fill:#fff3e0,stroke:#f57c00
+    style E fill:#fce4ec,stroke:#c62828
+    style F fill:#f3e5f5,stroke:#7b1fa2
+```
+
+| Part | 주제 | 핵심 질문 |
+|------|------|----------|
+| 1-3 | 기초 & 설정 | Claude Code를 어떻게 세팅하고 자동화하는가? |
+| 4 | Discovery | 유저 문제를 어떻게 구조화하는가? |
+| 5 | Definition | 해결책을 어떻게 검증 가능하게 정의하는가? |
+| 6 | Delivery | PM이 직접 프로토타입을 만들 수 있는가? |
+| 7 | Growth | 데이터로 성장을 어떻게 설계하는가? |
+| 8 | 전략 | AI 시대 PM의 커리어는 어디로 가는가? |
+
+---
+
 ## 이 가이드는 무엇인가요?
+
 
 Claude Code(CLI 기반 AI 에이전트)를 활용하여 PM이 **Discovery → Definition → Delivery → Growth** 전체 제품 개발 사이클에서 일하는 방식을 어떻게 변화시킬 수 있는지를 다루는 실전 가이드입니다.
 
