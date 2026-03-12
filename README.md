@@ -159,21 +159,34 @@ Claude Code(CLI 기반 AI 에이전트)를 활용하여 PM이 **Discovery → De
 | A.6 | [배틀 카드](./A.6-usecase-battle-cards.md) | 경쟁사 배틀 카드 라이브러리 구축 | P → L |
 | A.7 | [고객 페르소나](./A.7-usecase-customer-personas.md) | 행동 데이터 클러스터링 기반 페르소나 구축 | P → L |
 | A.8 | [투자 메모](./A.8-usecase-investment-memo.md) | 비즈니스 케이스 작성 및 이사회 Q&A 시뮬레이션 | P → L |
-| A.9 | [프로세스 플로우차트](./A.9-usecase-process-flowchart.md) | Mermaid 기반 프로세스 문서화 | J → P |
-| A.10 | [콘텐츠 적응](./A.10-usecase-content-adaptation.md) | 릴리즈 콘텐츠 6채널 동시 적응 및 발행 자동화 | J → P |
+| A.9 | [프로세스 플로우차트](./A.9-usecase-process-flowchart.md) | Mermaid 기벘 프로세스 문서화 | J → P |
+| A.10 | [콘텐츠 적응](./A.10-usecase-content-adaptation.md) | 릴리즉 콘텐츠 6채널 동시 적응 및 발행 자동화 | J → P |
 
 ---
+
+## 🔥 가장 많이 읽히는 콘텐츠
+
+> 트래픽 데이터 기반 인기 순위입니다.
+
+| 순위 | 주제 | 바로가기 | 한 줄 요약 |
+|:---:|------|:--------:|-----------|
+| 1 | 왜 지금 AI PM인가 | [1.1](./1.1-why-now.md) | PM 시간 배분이 완전히 바뀌는 이유 |
+| 2 | CLAUDE.md 심화 | [3.2](./3.2-claude-md-deep-dive.md) | 프로젝트 메모리 세팅의 모든 것 |
+| 3 | PRD 작성법 | [5.1](./5.1-definition-write-prd.md) | 소크라틱 질문법으로 PRD의 품질을 바꾸다 |
+| 4 | 모드와 깊이 | [2.2](./2.2-modes-and-depth.md) | Edit/Plan/think 모드 실전 활용법 |
+| 5 | 바이브 코딩 | [6.1](./6.1-delivery-vibe-coding.md) | PM이 프로토타입을 직접 만드는 방법 |
 
 ## 빠른 시작
 
 ```
-"Claude Code가 뭔지 모르겠어"        → 1.2-what-is-claude-code.md
-"일단 설치부터 하고 싶어"             → 1.3-install-and-first-run.md
-"PRD 작성에 바로 써보고 싶어"         → 5.1-definition-write-prd.md
-"프로토타입을 직접 만들어보고 싶어"     → 6.1-delivery-vibe-coding.md
-"CLAUDE.md를 바로 세팅하고 싶어"      → templates/CLAUDE-md-starter.md
-"샘플 데이터로 실습하고 싶어"          → samples/README.md
-"전체 PM 워크플로우를 한 번에 보고 싶어" → A.1-running-scenario.md
+"Claude Code가 ǭ�지 모르겠어"          → 1.2-what-is-claude-code.md
+"일단 설치부터 하고 싶어"               → 1.3-install-and-first-run.md
+"PRD 작성에 바로 써보고 싶어"           → 5.1-definition-write-prd.md
+"프로토타입을 직접 만들어보고 싶어"       → 6.1-delivery-vibe-coding.md
+"CLAUDE.md를 바로 세팅하고 싶어"        → templates/CLAUDE-md-starter.md
+"샘플 데이터로 실습하고 싶어"            → samples/README.md
+"전체 PM 워크플로우를 한 번에 보고 싶어"  → A.1-running-scenario.md
+"AI 프롬프트 작성법이 궁금해"            → ai-prompts-playbook (별도 레포)
 ```
 
 ---
@@ -210,16 +223,16 @@ AI_PM/
 
 1. **입력 → 응답 → 판단** — 모든 모듈은 실제 터미널 세션을 따라갑니다
 2. **PM이 판단하는 지점** — Claude가 할 수 없는 것, PM만이 할 수 있는 것을 명확히 합니다
-3. **Before/After** — 각 모듈에서 PM의 역할이 어떻게 변하는지를 보여줍니다
-4. **점진적 난이도** — Part 1의 설치부터 Part 8의 전략까지 자연스럽게 상승합니다
+3. **Before/After** — 각 모듈에서 PM의 역할 이 어떻게 변하는지를 보여:니다
+4. **점진적 난이도** — Part 18의 설치부터 Part 8의 전략까지 자연스럽게 상승합니다
 
 ---
 
 ## 주요 이론 프레임워크
 
-이 가이드에서 다루는 핵심 이론과 방법론입니다.
+이 가이드에서 다루는 핵심 이론과 방법론,��니다.
 
-| 프레임워크 | 출처 | 적용 챕터 |
+| 프레임워크 | 출처 | 적용 챵터 |
 | --- | --- | --- |
 | 소크라틱 질문법 (Richard Paul & Linda Elder) | 비판적 사고 교육 | 5.1 PRD 작성 |
 | Rumelt 전략 커널 (Good Strategy Bad Strategy) | Richard Rumelt, 2011 | 5.2 제품 전략 |
@@ -229,10 +242,26 @@ AI_PM/
 
 ---
 
+## 관련 프로젝트
+
+이 가이드는 AI Native 시리즈의 일부입니다.
+
+| 프로젝트 | 설명 | 단계 |
+|----------|------|------|
+| [AI_Human](https://github.com/kimsanguine/AI_Human) | AI 입문 100일 커리큘럼 — Python~RAG 기초 | 1단계 (초급) |
+| [AI_Engineer](https://github.com/kimsanguine/AI_Engineer) | AI Agent 100개 직접 구현 | 2단계 (중급) |
+| **AI_PM** (현재) | Claude Code로 PM 워크플로우 재설계 | 3단계 (실전) |
+| [ai-prompts-playbook](https://github.com/kimsanguine/ai-prompts-playbook) | 33+ AI 프롬프트 — 3-Layer 인지 프레임워크 | 참조 (크로스 활용) |
+
+> 💡 **AI 프롬프트 활용법**이 궁금하다면 → [ai-prompts-playbook](https://github.com/kimsanguine/ai-prompts-playbook)에서 전문가의 눈 → 합의 너머 → 자기 검즜의 3-Layer 프레임워크를 확인하세요.
+
+---
+
 ## Contributing
 
 이 가이드에 대한 피드백, 오류 수정, 추가 유즈케이스 제안을 환영합니다.
 
+- **Discussions**: 질문이나 아이디어가 있다면 [Discussions](https://github.com/kimsanguine/AI_PM/discussions)에 참여해 주세요
 - **Issues**: 오류나 개선 제안은 [Issues](https://github.com/kimsanguine/AI_PM/issues)에 등록해 주세요
 - **Pull Requests**: 직접 수정 후 PR을 보내주셔도 좋습니다
 
@@ -242,7 +271,7 @@ AI_PM/
 
 이 프로젝트는 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) 라이선스를 따릅니다.
 
-- 교육·학술 목적 자유 이용 가능
+- 교육·학슰 목적 자유 이용 가능
 - 상업적 이용 시 별도 라이선스 필요
 - 강의·기업 교육·상업적 활용 문의: kimsanguine@gmail.com
 
