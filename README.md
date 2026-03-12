@@ -248,12 +248,12 @@ AI_PM/
 
 | 프로젝트 | 설명 | 단계 |
 |----------|------|------|
-| [AI_Human](https://github.com/kimsanguine/AI_Human) | AI 입문 100일 커리큘럼 — Python~RAG 기초 | 1단계 (초급) |
-| [AI_Engineer](https://github.com/kimsanguine/AI_Engineer) | AI Agent 100개 직접 구현 | 2단계 (중급) |
-| **AI_PM** (현재) | Claude Code로 PM 워크플로우 재설계 | 3단계 (실전) |
+| **AI_PM** (현재) | Claude Code로 PM 워크플로우 재설계 | 1단계 (초급) |
+| [AI_Human](https://github.com/kimsanguine/AI_Human) | AI 입문 100일 커리큘럼 — Python~RAG 기초 | 2단계 (중급)) |
+| [AI_Engineer](https://github.com/kimsanguine/AI_Engineer) | AI Agent 100개 직접 구현 | 3단계 (실전) |
 | [ai-prompts-playbook](https://github.com/kimsanguine/ai-prompts-playbook) | 33+ AI 프롬프트 — 3-Layer 인지 프레임워크 | 참조 (크로스 활용) |
 
-> 💡 **AI 프롬프트 활용법**이 궁금하다면 → [ai-prompts-playbook](https://github.com/kimsanguine/ai-prompts-playbook)에서 전문가의 눈 → 합의 너머 → 자기 검즜의 3-Layer 프레임워크를 확인하세요.
+> 💡 **AI 프롬프트 활용법**이 궁금하다면 → [ai-prompts-playbook](https://github.com/kimsanguine/ai-prompts-playbook)에서 전문가의 눈 → 합의 너머 → 자기 검증의 3-Layer 프레임워크를 확인하세요.
 
 ---
 
