@@ -1,5 +1,7 @@
-# 🚀 AI 네이티브 PM을 위한 Claude Code 실전 가이드
+# 🚀 Claude Code for PMs — AI 네이티브 PM 실전 가이드
 
+> 한국어 PM 을 위한 **Claude Code 실전 플레이북**. `claude-opus-4-7` 기준, 8파트 + 10 유즈케이스.
+>
 > **"도구를 배우는 것이 아니라, PM의 일하는 방식을 재설계한다."**
 >
 > AI 네이티브 PM은 **컨텍스트 인프라**를 설계한다 — CLAUDE.md · INDEX.md · Skills · Hooks.
@@ -13,15 +15,15 @@
 
 ---
 
-## 학습 경로
-
-이 가이드는 아래 시리즈의 실전 단계입니다.
+## 시리즈 안에서의 위치
 
 ```
-[AI_Human]          →      [AI_Engineer]        →      [AI_PM]  ← 지금 여기
+[AI_Human]          →      [AI_Engineer]        →      [AI_PM]  ← 여기 (Claude Code 활용)
  1단계 · 100일 과정         2단계 · 100 Agents          3단계 · 워크플로우 재설계
  Python~RAG 기초            AI Agent 직접 구현           PM의 일하는 방식을 바꾸다
 ```
+
+> 자매 PM 도구: **[hplan](https://github.com/kimsanguine/hplan)** — Product Build Gate (만들기 전 검증). AI_PM 이 "어떻게 만들 것인가" 라면, hplan 은 "정말 만들 것인가" 의 30분 체크리스트.
 
 ---
 
