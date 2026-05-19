@@ -1,0 +1,34 @@
+name: lint
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: |
+            **/*.md
+            !node_modules/**
+            !.git/**
+
+  encoding-sanity:
+    name: encoding sanity (Korean broken-char detector)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: scan for replacement char and broken codepoints
+        run: |
+          set -euo pipefail
+          BAD_FILES=$(grep -rl --include="*.md" -P "\x{FFFD}|학슰|기벘|릴리즉|ǭ�|학슢" . || true)
+          if [ -n "$BAD_FILES" ]; then
+            echo "::error::Found broken encoding / replacement chars:"
+            echo "$BAD_FILES"
+            grep -n --include="*.md" -rP "\x{FFFD}|학슰|기벘|릴리즈|ǭ�|학슢" . || true
+            exit 1
+          fi
+          echo "✓ encoding sanity OK"

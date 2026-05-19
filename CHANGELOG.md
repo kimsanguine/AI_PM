@@ -24,12 +24,21 @@
 - **`260317_community_manager/`, `260317_seo_optimizer/`, `260317_voice_clone_studio/`** — 가이드 본문에서 직접 참조되지 않는 별도 Python 프로젝트 3종 제거. 본 레포의 정체성은 "PM playbook" 이므로, 챕터와 결합되지 않은 독립 스캐폴딩은 dead weight 로 판단.
 - **`EXAMPLES.md`** — `260317_*` 매핑 표였으므로 동반 제거.
 
+### Added (v1.1 후속)
+- 신규 챕터 `2.7-hooks.md` — SessionStart / PostToolUse / Stop 훅, 검증 사다리와의 매핑.
+- 신규 챕터 `3.2.2-claude-md-for-4-7.md` — 4.7 literal following 대응 8축 프레임워크, 마이그레이션 체크리스트 (본 라운드의 헤드라인 챕터).
+- `.claude/agents/` — engineering-reviewer · exec-advisor · user-researcher.
+- `templates/hooks/` — stop-notify.sh · posttooluse-fmt.sh · sessionstart-load.sh.
+- `templates/commands/` 신규 6종 — discovery · competitor · briefing · review · postmortem · retro.
+- `skills/` 신규 4종 — discovery-synthesizer · competitor-battlecard · experiment-analyzer · kpi-card-builder (각 SKILL.md + good/bad 예시).
+- `.github/workflows/` — lint.yml (markdownlint + 인코딩 detector), links.yml (lychee), frontmatter.yml.
+- `.github/scripts/validate_frontmatter.py` — front-matter 스키마 검증.
+
 ### Planned (v1.2 / v1.3)
-- 폴더 재편 (`docs/partN/...`)
-- 신규 챕터: **2.7 Hooks** · **3.2.1 패턴 카탈로그** · **3.2.2 4.7 시대 CLAUDE.md** · **3.6 Claude Code on the web**
-- 자산 보강: `templates/claude-home/`, `templates/hooks/`, `.claude/agents/`, 슬래시 커맨드 6개, 스킬 4개
-- 운영 문서: `docs/operations/sot-policy.md`, `docs/operations/closed-loop.md`
-- CI: lint / links / frontmatter
+- 폴더 재편 (`docs/partN/...`) — 36개 cross-link 일괄 수정 PR.
+- 신규 챕터: **3.2.1 패턴 카탈로그** · **3.6 Claude Code on the web**.
+- 기존 챕터 35개에 front-matter 일괄 추가.
+- Part 1~3 4.7 기준 재검수 (모드/effort, adaptive thinking, subagent fan-out).
 
 ---
 

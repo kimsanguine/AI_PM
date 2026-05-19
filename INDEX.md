@@ -29,11 +29,13 @@
 - `2.4-custom-subagents.md` — use: 서브에이전트 정의
 - `2.5-agent-teams.md` — use: 멀티에이전트 + 병렬 세션
 - `2.6-human-in-the-loop.md` — use: HITL · 검증 사다리
+- `2.7-hooks.md` — use: SessionStart / PostToolUse / Stop 훅 (폐루프 자동화)
 
 ## Part 3 — Advanced
 
 - `3.1-mcp-integration.md` — use: Notion / Linear / Slack / GitHub MCP
 - `3.2-claude-md-deep-dive.md` — use: CLAUDE.md 8축 프레임워크
+- `3.2.2-claude-md-for-4-7.md` — use: 4.7 시대 CLAUDE.md (literal following, 마이그레이션)
 - `3.3-slash-commands.md` — use: 슬래시 커맨드 (4섹션 표준)
 - `3.4-custom-skills.md` — use: SKILL.md 패키지
 - `3.5-automation-n8n.md` — use: 외부 자동화

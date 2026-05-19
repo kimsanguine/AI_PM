@@ -107,6 +107,7 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 | 2.4 | [커스텀 서브에이전트](./2.4-custom-subagents.md) | 엔지니어/경영진/리서처 에이전트 구성 | P → L |
 | 2.5 | [에이전트 팀](./2.5-agent-teams.md) | 멀티 에이전트 병렬 협업, Delegate 모드 | P → L |
 | 2.6 | [Human-in-the-Loop](./2.6-human-in-the-loop.md) | AI 파트너 철학, 루프 깊이 프레임워크, 가드레일 설계 | 모든 레벨 |
+| 2.7 | [Hooks](./2.7-hooks.md) | SessionStart / PostToolUse / Stop — 폐루프 자동화 | P → L |
 
 ### Part 3: 고급 설정 — 워크플로우 자동화 인프라
 
@@ -114,6 +115,7 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 | --- | --- | --- | --- |
 | 3.1 | [MCP 연동](./3.1-mcp-integration.md) | Notion/Linear/Slack/GitHub를 하나의 터미널에서 연결 | P → L |
 | 3.2 | [CLAUDE.md 심화](./3.2-claude-md-deep-dive.md) | 폴더 구조, YAML front matter, 8축 프레임워크 | P → L |
+| 3.2.2 | [4.7 시대의 CLAUDE.md](./3.2.2-claude-md-for-4-7.md) | Literal following 대응, 8축 detail, 마이그레이션 체크리스트 | P → L |
 | 3.3 | [슬래시 커맨드](./3.3-slash-commands.md) | /today, /prd, /status 등 반복 워크플로우 자동화 | P → L |
 | 3.4 | [커스텀 스킬](./3.4-custom-skills.md) | SKILL.md 기반 재사용 워크플로우 패키지 | P → L |
 | 3.5 | [외부 자동화 (n8n)](./3.5-automation-n8n.md) | 스케줄/이벤트 기반 워크플로우 구축 | P → L |
