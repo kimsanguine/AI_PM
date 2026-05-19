@@ -1,0 +1,37 @@
+name: 📐 RFC (Architectural / Strategic Decision)
+description: 기술/전략 결정을 기록합니다 (ADR 변형).
+title: "[RFC] "
+labels: ["type:rfc"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        한 번 내려진 결정과 그 이유를 시간이 지나도 추적할 수 있게 합니다.
+        가이드 챕터 5.2 (제품 전략) 의 Rumelt Diagnosis → Guiding Policy → Coherent Actions 흐름을 따라도 좋습니다.
+  - type: textarea
+    id: context
+    attributes:
+      label: Context (배경)
+      description: 무엇이 우리를 이 결정으로 몰고 왔나?
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: 대안들
+      description: 2~4개의 옵션을 trade-off와 함께.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision
+      description: 어느 옵션을 선택했고, 왜.
+    validations:
+      required: true
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences (결과/리스크)
+    validations:
+      required: true

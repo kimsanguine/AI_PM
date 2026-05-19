@@ -1,0 +1,71 @@
+name: 📋 PRD (Product Requirements Doc)
+description: 새로운 제품/기능의 PRD를 시작합니다. 소크라틱 질문으로 가설을 검증합니다.
+title: "[PRD] "
+labels: ["type:prd", "stage:definition"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 시작 전 체크
+        - 이 PRD는 **Discovery 단계의 인사이트**에서 출발했나요?
+        - 관련 Discovery 이슈가 있으면 본문에 `#번호`로 링크해 주세요.
+        - 가이드 챕터 5.1 (PRD 작성) 의 4섹션(Task/Scope/Length/Format)을 따릅니다.
+  - type: input
+    id: problem
+    attributes:
+      label: 1. Problem (한 줄)
+      description: 누가, 어떤 상황에서, 무엇 때문에 고통받고 있는가?
+      placeholder: "PM이 매주 4시간을 상태 보고서 작성에 쓴다"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 2. Evidence (근거)
+      description: 정량/정성 데이터, 인터뷰 인용, 행동 데이터. INDEX.md에서 참조 경로 명시.
+      placeholder: |
+        - samples/user-survey-results.csv (n=124, 67% pain reported)
+        - Notion: voc-2026-q1#sec-3
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 3. Solution (가설)
+      description: 어떤 형태로 해결할 것인가? 대안 2~3개와 선택 이유.
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: 4. Success Metric
+      description: OMTM + guardrail. 측정 가능한 형태로.
+      placeholder: "주간 PM 보고서 작성 시간 4h → 1h (75% 감소)"
+    validations:
+      required: true
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: 5. Out of Scope (이번에 안 하는 것)
+      description: 4.7 literal following 대응 — 명시적으로 범위 차단.
+    validations:
+      required: true
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Tier
+      options:
+        - "L0 (concept)"
+        - "L1 (prototype)"
+        - "L2 (production)"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 출처·검증 체크
+      options:
+        - label: INDEX.md에서 관련 문서를 모두 참조했다
+          required: true
+        - label: 검증 사다리 4단계 중 어디까지 적용할지 정했다
+          required: false

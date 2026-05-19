@@ -1,0 +1,23 @@
+name: 🐛 버그 / 오류 신고
+description: 챕터 본문 오류, 깨진 링크, 인코딩 깨짐, 코드 예시 오류.
+title: "[Bug] "
+labels: ["type:bug"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: 어디에서?
+      description: 파일 경로 + 줄 번호 또는 섹션.
+      placeholder: "1.2-what-is-claude-code.md L43"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 무엇이 잘못되었나요?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대했던 것은?

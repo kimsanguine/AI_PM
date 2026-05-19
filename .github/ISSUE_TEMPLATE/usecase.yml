@@ -1,0 +1,37 @@
+name: 💡 신규 유즈케이스 제안
+description: 가이드에 추가하고 싶은 PM 유즈케이스를 제안합니다.
+title: "[UseCase] "
+labels: ["type:usecase"]
+body:
+  - type: input
+    id: usecase
+    attributes:
+      label: 유즈케이스 한 줄
+      placeholder: "주간 비즈니스 리뷰 자동 합성"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 해결하는 문제
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: 워크플로우 스케치
+      description: 입력 → 처리 → 출력. 어떤 슬래시 커맨드/스킬/MCP가 필요한가?
+    validations:
+      required: true
+  - type: dropdown
+    id: part
+    attributes:
+      label: 어떤 Part에 어울리는가
+      options:
+        - "Part 4 Discovery"
+        - "Part 5 Definition"
+        - "Part 6 Delivery"
+        - "Part 7 Growth"
+        - "Appendix (유즈케이스)"
+    validations:
+      required: true

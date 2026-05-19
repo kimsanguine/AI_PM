@@ -1,0 +1,48 @@
+name: 🔍 Discovery 인사이트
+description: 유저 리서치·경쟁 분석에서 나온 인사이트를 기록합니다.
+title: "[Discovery] "
+labels: ["type:discovery", "stage:discovery"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        가이드 챕터 4.1 (유저 리서치) · 4.2 (경쟁사 분석) 의 산출물.
+        가능한 한 정량적 근거를 첨부해 주세요.
+  - type: input
+    id: source
+    attributes:
+      label: 출처
+      description: 인터뷰? 설문? 사용 로그? CSV 파일 경로 또는 Notion 페이지 링크.
+    validations:
+      required: true
+  - type: input
+    id: sample_size
+    attributes:
+      label: 표본 크기 / 신뢰도
+      placeholder: "n=124, 응답률 38%"
+  - type: textarea
+    id: insight
+    attributes:
+      label: 인사이트 (한 문장)
+      description: 무엇을 발견했는가?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 근거 인용
+      description: 인터뷰 quote, 수치, 행동 패턴을 그대로.
+    validations:
+      required: true
+  - type: textarea
+    id: so_what
+    attributes:
+      label: So what?
+      description: PRD/전략에 어떻게 반영되어야 하는가?
+    validations:
+      required: true
+  - type: input
+    id: linked_prd
+    attributes:
+      label: 연결될 PRD 이슈 (있다면)
+      placeholder: "#"
