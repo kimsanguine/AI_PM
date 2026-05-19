@@ -195,7 +195,7 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 "프로토타입을 직접 만들어보고 싶어"        → 6.1-delivery-vibe-coding.md
 "CLAUDE.md를 바로 세팅하고 싶어"          → templates/CLAUDE-md-starter.md + templates/claude-home/
 "4.7 시대 CLAUDE.md 작성법이 궁금해"      → 3.2.2-claude-md-for-4-7.md
-"훅으로 폐루프 만들고 싶어"               → 2.7-hooks.md + templates/hooks/
+"훅으로 업무자동화를 만들고 싶어"               → 2.7-hooks.md + templates/hooks/
 "샘플 데이터로 실습하고 싶어"             → samples/README.md
 "전체 PM 워크플로우를 한 번에 보고 싶어"   → A.1-running-scenario.md
 "AI 프롬프트 작성법이 궁금해"             → ai-prompts-playbook (별도 레포)
