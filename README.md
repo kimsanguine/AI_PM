@@ -191,7 +191,9 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 "이 레포가 자기 자신을 어떻게 쓰는지 보고싶어" → CLAUDE.md (루트)
 "PRD 작성에 바로 써보고 싶어"             → 5.1-definition-write-prd.md
 "프로토타입을 직접 만들어보고 싶어"        → 6.1-delivery-vibe-coding.md
-"CLAUDE.md를 바로 세팅하고 싶어"          → templates/CLAUDE-md-starter.md
+"CLAUDE.md를 바로 세팅하고 싶어"          → templates/CLAUDE-md-starter.md + templates/claude-home/
+"4.7 시대 CLAUDE.md 작성법이 궁금해"      → 3.2.2-claude-md-for-4-7.md
+"훅으로 폐루프 만들고 싶어"               → 2.7-hooks.md + templates/hooks/
 "샘플 데이터로 실습하고 싶어"             → samples/README.md
 "전체 PM 워크플로우를 한 번에 보고 싶어"   → A.1-running-scenario.md
 "AI 프롬프트 작성법이 궁금해"             → ai-prompts-playbook (별도 레포)
@@ -221,23 +223,38 @@ AI_PM/
 ├── .github/                        # "GitHub as PRD" 인프라
 │   ├── ISSUE_TEMPLATE/             # PRD / Discovery / RFC / UseCase / Bug
 │   ├── PULL_REQUEST_TEMPLATE.md
+│   ├── workflows/                  # CI — lint / links / frontmatter
+│   ├── scripts/                    # validate_frontmatter.py
 │   ├── labels.yml
 │   └── CODEOWNERS
+│
+├── .claude/
+│   └── agents/                     # engineering-reviewer / exec-advisor / user-researcher
+│
+├── docs/
+│   └── operations/                 # sot-policy / closed-loop (운영 문서)
 │
 ├── samples/                        # 실습용 데이터
 │   ├── ab-test-results.csv
 │   ├── competitor-data.json
 │   └── user-survey-results.csv
 │
-├── templates/                      # 바로 쓸 수 있는 템플릿
+├── templates/
 │   ├── CLAUDE-md-starter.md
-│   └── commands/                   # /today, /prd, /status
+│   ├── claude-home/                # ~/.claude/ 스타터 (CLAUDE.md + guides + skills)
+│   ├── commands/                   # /today /prd /status /discovery /competitor
+│   │                               #   /briefing /review /postmortem /retro
+│   └── hooks/                      # stop-notify / posttooluse-fmt / sessionstart-load
 │
-└── skills/                         # 재사용 스킬
-    └── prd-generator/
+└── skills/
+    ├── prd-generator/
+    ├── discovery-synthesizer/
+    ├── competitor-battlecard/
+    ├── experiment-analyzer/
+    └── kpi-card-builder/
 ```
 
-> 🔭 **v1.2 예정**: `docs/partN/...` 폴더 재편, 신규 챕터(2.7 Hooks · 3.2.2 4.7 시대 CLAUDE.md · 3.6 Claude Code on the web), `templates/claude-home/`, `templates/hooks/`, `.claude/agents/`, 운영 문서.
+> 🔭 **v1.2 예정**: `docs/partN/...` 폴더 재편 (36 cross-link 일괄 수정 PR), 신규 챕터 3.2.1 패턴 카탈로그 · 3.6 Claude Code on the web, Part 1~3 4.7 재검수.
 
 ---
 
