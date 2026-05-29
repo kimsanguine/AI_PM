@@ -1,3 +1,5 @@
+![AI_PM Claude Code for PMs banner](./assets/banner-gpt.png)
+
 # 🚀 Claude Code for PMs — AI 네이티브 PM 실전 가이드
 
 > 한국어 PM 을 위한 **Claude Code 실전 플레이북**. `claude-opus-4-7` 기준, 8파트 + 10 유즈케이스.
