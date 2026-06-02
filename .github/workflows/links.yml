@@ -24,7 +24,6 @@ jobs:
             --cache
             --max-cache-age 1d
             --no-progress
-            --exclude-mail
             --exclude-loopback
             --accept '200,204,206,403,429'
             --timeout 20

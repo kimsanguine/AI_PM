@@ -39,13 +39,14 @@
 ## 가이드 lazy load
 
 다음 가이드는 작업 유형에 맞을 때만 모델이 펼치도록 한다:
+
 - 글 다듬기 → `~/.claude/guides/writing.md`
 - 리뷰 → `~/.claude/guides/review.md`
 - 실험·평가 → `~/.claude/guides/evals.md`
 
 ## 모델 ID
 
-- 기본 모델은 `claude-opus-4-7`.
+- 기본 모델은 `claude-opus-4-8`.
 - 마케팅 이름 ("Claude 4 Opus" 등) 사용 금지. 항상 정자.
 
 ---

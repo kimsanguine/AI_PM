@@ -2,7 +2,7 @@
 
 # 🚀 Claude Code for PMs — AI 네이티브 PM 실전 가이드
 
-> 한국어 PM 을 위한 **Claude Code 실전 플레이북**. `claude-opus-4-7` 기준, 8파트 + 10 유즈케이스.
+> 한국어 PM 을 위한 **Claude Code 실전 플레이북**. `claude-opus-4-8` 기준, 8파트 + 10 유즈케이스.
 >
 > **"도구를 배우는 것이 아니라, PM의 일하는 방식을 재설계한다."**
 >
@@ -12,8 +12,8 @@
 ![Forks](https://img.shields.io/github/forks/kimsanguine/AI_PM?style=social)
 ![Last Commit](https://img.shields.io/github/last-commit/kimsanguine/AI_PM)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-![Claude](https://img.shields.io/badge/Claude-claude--opus--4--7-blue)
-![Version](https://img.shields.io/badge/guide-v1.2-success)
+![Claude](https://img.shields.io/badge/Claude-claude--opus--4--8-blue)
+![Version](https://img.shields.io/badge/guide-v1.3-success)
 
 ---
 
@@ -63,7 +63,7 @@ graph LR
 
 ## 이 가이드는 무엇인가요?
 
-Claude Code(`claude-opus-4-7` 기준 CLI 에이전트)를 활용해 PM이 **Discovery → Definition → Delivery → Growth** 사이클 전반에서 일하는 방식을 어떻게 변화시킬 수 있는지를 다루는 실전 가이드입니다.
+Claude Code(`claude-opus-4-8` 기준 CLI 에이전트)를 활용해 PM이 **Discovery → Definition → Delivery → Growth** 사이클 전반에서 일하는 방식을 어떻게 변화시킬 수 있는지를 다루는 실전 가이드입니다.
 
 단순한 도구 사용법이 아니라, **컨텍스트 인프라를 설계하는 법**을 배웁니다.
 

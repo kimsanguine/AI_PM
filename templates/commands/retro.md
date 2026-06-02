@@ -1,17 +1,21 @@
 # /retro — 폐루프 트랜스크립트 회고
 
 ## Task
+
 최근 N일의 Claude Code 트랜스크립트에서 **자주 고치는 항목 / 반복 지시 / 동일 실수** 를 찾아내, 어디(CLAUDE.md / 스킬 / 슬래시) 에 흡수할지의 결정안과 PR 초안을 출력한다.
 
 ## Scope
+
 - 분석만 한다. 실제 CLAUDE.md / 스킬 파일을 직접 수정하지 않는다 (PR 초안만 제시).
 - 입력: `~/.claude/projects/<hash>/*.jsonl` 또는 사용자가 지정한 경로.
 - 기본 기간 7일. 사용자가 `--since YYYY-MM-DD` 명시하면 그 범위.
 
 ## Length
+
 - 패턴 3–10개. 전체 1,500–3,000자.
 
 ## Format
+
 ```markdown
 ## 분석 범위
 - 기간: YYYY-MM-DD ~ YYYY-MM-DD
@@ -38,11 +42,14 @@
 
 ## PR 초안
 ```
+
 title: chore(retro): WW <NN> 2026 absorb <N> rules
 body:
+
 - ~/.claude/CLAUDE.md: + "<patch>"
 - skills/polish.md: + <patch>
 - 스팸으로 처리: <패턴>
+
 ```
 ```
 

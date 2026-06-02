@@ -16,7 +16,7 @@
 
 - 언어: 한국어 본문 + 필요한 영어 용어(원어 유지).
 - 구조: H2/H3 + 짧은 표. 불릿 남발 금지. 한 절 = 한 주장.
-- 코드/명령은 펜스 블록. 모델 ID는 `claude-opus-4-7` 정자.
+- 코드/명령은 펜스 블록. 모델 ID는 `claude-opus-4-8` 정자.
 - 모델 마케팅 이름(`Claude 4 Opus` 등) 사용 금지.
 - 챕터 본문 분량 가이드: 8–25KB.
 
@@ -30,6 +30,7 @@
 - **Format** — 출력 포맷 (markdown / JSON / XML 등).
 
 현재 자산 (참고):
+
 - 슬래시 9종: `today`, `prd`, `status`, `discovery`, `competitor`, `briefing`, `review`, `postmortem`, `retro`
 - 스킬 5종: `prd-generator`, `discovery-synthesizer`, `competitor-battlecard`, `experiment-analyzer`, `kpi-card-builder`
 - 서브에이전트 3종: `engineering-reviewer`, `exec-advisor`, `user-researcher`
@@ -37,7 +38,7 @@
 
 ## 4. Tools — 도구·모델
 
-- 모델: `claude-opus-4-7`.
+- 모델: `claude-opus-4-8`.
 - effort: **xhigh** (편집/에이전트 작업), **high** (리뷰), **medium** (단순 lookup).
 - thinking: adaptive (off-by-default). 다단계 추론이 필요할 때만 켠다.
 - 컨텍스트: 1M. 안정 영역(이 파일, `INDEX.md`)을 상단에 둬 prompt caching 적중률을 높인다.
@@ -88,6 +89,6 @@
 
 ---
 
-last_updated: 2026-05-19
-claude_model: claude-opus-4-7
-guide_version: v1.2
+last_updated: 2026-06-02
+claude_model: claude-opus-4-8
+guide_version: v1.3

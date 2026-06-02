@@ -9,6 +9,7 @@
 | `CLAUDE-md-starter.md` | 프로젝트 루트에 CLAUDE.md로 복사하여 사용. PM 워크스페이스 설정, HITL 규칙, 분석 규칙, 프레임워크 포함 |
 
 ### 사용법
+
 ```bash
 # 프로젝트 루트에 복사:
 cp templates/CLAUDE-md-starter.md ./CLAUDE.md
@@ -20,11 +21,12 @@ cp templates/CLAUDE-md-starter.md ./CLAUDE.md
 
 | 파일 | 커맨드 | 관련 챕터 | 설명 |
 |------|--------|----------|------|
-| `commands/today.md` | `/today` | [3.3 슬래시 커맨드](../3.3-slash-commands.md) | 오늘의 PM 브리핑 자동 생성 |
-| `commands/prd.md` | `/prd [기능명]` | [5.1 PRD 작성](../5.1-definition-write-prd.md) | 소크라틱 대화 기반 PRD 초안 생성 |
-| `commands/status.md` | `/status` | [A.5 상태 보고서](../A.5-usecase-status-report.md) | 주간 상태 보고서 자동 생성 |
+| `commands/today.md` | `/today` | [3.3 슬래시 커맨드](../docs/part3-advanced/3.3-slash-commands.md) | 오늘의 PM 브리핑 자동 생성 |
+| `commands/prd.md` | `/prd [기능명]` | [5.1 PRD 작성](../docs/part5-definition/5.1-definition-write-prd.md) | 소크라틱 대화 기반 PRD 초안 생성 |
+| `commands/status.md` | `/status` | [A.5 상태 보고서](../docs/appendix/A.5-usecase-status-report.md) | 주간 상태 보고서 자동 생성 |
 
 ### 설치법
+
 ```bash
 # .claude/commands/ 폴더로 복사:
 mkdir -p .claude/commands

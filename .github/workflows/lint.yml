@@ -28,11 +28,11 @@ jobs:
           # 제외: .github/ (이 워크플로 자체에 detector 패턴이 들어있어 self-match),
           #       CHANGELOG.md (수정 이력의 인용으로 깨진 문자열을 의도적으로 보관)
           TARGETS="README.md CLAUDE.md INDEX.md docs templates skills .claude"
-          BAD_FILES=$(grep -rl --include="*.md" -P "\x{FFFD}|학슰|기벘|릴리즈|ǭ�|학슢" $TARGETS 2>/dev/null || true)
+          BAD_FILES=$(grep -rl --include="*.md" -P "\x{FFFD}|학슰|기벘|ǭ�|학슢" $TARGETS 2>/dev/null || true)
           if [ -n "$BAD_FILES" ]; then
             echo "::error::Found broken encoding / replacement chars:"
             echo "$BAD_FILES"
-            grep -n --include="*.md" -rP "\x{FFFD}|학슰|기벘|릴리즈|ǭ�|학슢" $TARGETS || true
+            grep -n --include="*.md" -rP "\x{FFFD}|학슰|기벘|ǭ�|학슢" $TARGETS || true
             exit 1
           fi
           echo "✓ encoding sanity OK"

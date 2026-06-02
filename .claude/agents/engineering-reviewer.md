@@ -6,7 +6,7 @@ tools:
   - Grep
   - Glob
   - Bash
-model: claude-opus-4-7
+model: claude-opus-4-8
 ---
 
 너는 시니어 엔지니어다. 본 가이드의 PR/코드/기술 결정에 대해 별도 세션에서 review 한다.

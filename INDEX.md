@@ -85,6 +85,7 @@
 ## 자산
 
 ### 슬래시 커맨드 (`templates/commands/`)
+
 - `today.md` — `/today` 일일 브리핑 (기존)
 - `prd.md` — `/prd` PRD 생성 (기존)
 - `status.md` — `/status` 상태 보고서 (기존)
@@ -96,6 +97,7 @@
 - `retro.md` — `/retro` 트랜스크립트 폐루프 회고
 
 ### 스킬 (`skills/`)
+
 - `prd-generator/SKILL.md` (기존)
 - `discovery-synthesizer/SKILL.md` — 인사이트 합성
 - `competitor-battlecard/SKILL.md` — 경쟁사 카드
@@ -103,25 +105,30 @@
 - `kpi-card-builder/SKILL.md` — KPI 정의 카드
 
 ### 서브에이전트 (`.claude/agents/`)
+
 - `engineering-reviewer.md` — 엔지니어 관점 PR/코드 review
 - `exec-advisor.md` — 임원 관점 PRD/전략 review
 - `user-researcher.md` — UX 리서치 합성
 
 ### 전역 스타터 (`templates/claude-home/`)
+
 - `CLAUDE.md` — `~/.claude/CLAUDE.md` 스타터
 - `guides/writing.md` · `review.md` · `evals.md` (lazy load)
 - `skills/polish.md` — `/polish` 글 다듬기
 
 ### Hooks (`templates/hooks/`)
+
 - `stop-notify.sh` — 세션 종료 알림
 - `posttooluse-fmt.sh` — 편집 직후 포매터
 - `sessionstart-load.sh` — 세션 시작 시 INDEX.md 주입
 
 ### 운영 (`docs/operations/`)
+
 - `sot-policy.md` — Notion ↔ GitHub SoT
 - `closed-loop.md` — `/retro` 운영, One rule = one place
 
 ### 기타
+
 - `templates/CLAUDE-md-starter.md` — 새 프로젝트용 CLAUDE.md 스타터
 
 ## 샘플 데이터

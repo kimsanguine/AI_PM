@@ -1,17 +1,21 @@
 # /postmortem — 사후 분석 (blameless)
 
 ## Task
+
 출시/실험/장애에 대해 **blameless postmortem** 을 작성한다. 무엇이 일어났고, 왜, 다음에 무엇을 다르게 할지.
 
 ## Scope
+
 - 사실 정리 + 시스템 차원 학습. 개인 책임 추궁 금지.
 - 입력은 사용자가 첨부한 incident timeline, Slack quote, 메트릭 그래프 링크.
 - 외부 공유용 표현(Customer comms) 은 별도 절로 분리.
 
 ## Length
+
 - 본문 1,500–3,000자. Action items 5개 이하.
 
 ## Format
+
 ```markdown
 ## TL;DR (한 단락)
 무엇이 일어났고, 영향은 무엇이었고, 무엇을 바꿀 것인가.

@@ -1,7 +1,7 @@
 ---
 chapter: "A.3"
 title: "Claude 유즈케이스 × PM 실전 시나리오"
-claude_model: claude-opus-4-7
+claude_model: claude-opus-4-8
 last_updated: 2026-05-19
 ---
 
