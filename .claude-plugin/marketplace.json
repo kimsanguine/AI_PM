@@ -1,0 +1,24 @@
+{
+  "name": "ai-pm",
+  "owner": {
+    "name": "Sanguine Kim",
+    "email": "kimsanguine@gmail.com"
+  },
+  "description": "Claude Code for PMs — 비개발자 PM을 위한 PM 워크플로 스킬과 슬래시 명령 모음",
+  "plugins": [
+    {
+      "name": "ai-pm",
+      "source": "./",
+      "description": "PM 핵심 워크플로(PRD 작성·디스커버리 종합·경쟁사 배틀카드·실험 분석·KPI 카드)와 슬래시 명령을 한 번에 설치하는 플러그인",
+      "version": "1.0.0",
+      "author": {
+        "name": "Sanguine Kim",
+        "email": "kimsanguine@gmail.com"
+      },
+      "category": "productivity",
+      "tags": ["pm", "product-management", "prd", "discovery", "korean"],
+      "skills": "./skills",
+      "commands": "./templates/commands"
+    }
+  ]
+}

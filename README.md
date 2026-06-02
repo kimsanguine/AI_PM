@@ -13,7 +13,7 @@
 ![Last Commit](https://img.shields.io/github/last-commit/kimsanguine/AI_PM)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 ![Claude](https://img.shields.io/badge/Claude-claude--opus--4--8-blue)
-![Version](https://img.shields.io/badge/guide-v1.3-success)
+![Version](https://img.shields.io/badge/guide-v1.4-success)
 
 ---
 
@@ -107,6 +107,7 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 
 | # | 제목 | 핵심 내용 | 난이도 |
 | --- | --- | --- | --- |
+| 2.0 | [도구 지도 — 5가지 범주](./docs/part2-basics/2.0-toolkit-map.md) | 기억·스킬·자동 실행·대리인·확장 5범주 분류 멘탈모델 (입문 overview) | 모든 레벨 |
 | 2.1 | [파일과 입력](./docs/part2-basics/2.1-files-and-input.md) | @파일 참조, 이미지 입력, 다중 출력 패턴 | J |
 | 2.2 | [모드와 깊이](./docs/part2-basics/2.2-modes-and-depth.md) | Edit/Auto-Accept/Plan 모드, effort/adaptive thinking | J → P |
 | 2.3 | [프로젝트 메모리](./docs/part2-basics/2.3-project-memory.md) | 메모리 계층 구조, CLAUDE.md 작성법 | P |
@@ -127,6 +128,7 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 | 3.4 | [커스텀 스킬](./docs/part3-advanced/3.4-custom-skills.md) | SKILL.md 기반 재사용 워크플로우 패키지 | P → L |
 | 3.5 | [외부 자동화 (n8n)](./docs/part3-advanced/3.5-automation-n8n.md) | 스케줄/이벤트 기반 워크플로우 구축 | P → L |
 | 3.6 | [Claude Code on the web](./docs/part3-advanced/3.6-claude-code-on-the-web.md) | 웹·모바일·GitHub Action 실행 환경, 네트워크 정책, cloud worktree | P → L |
+| 3.7 | [플러그인 & 마켓플레이스](./docs/part3-advanced/3.7-plugins-and-marketplace.md) | 명령·스킬·에이전트·훅·MCP를 한 묶음으로 포장·공유, 마켓플레이스 2단계 설치 | P → L |
 
 ### Part 4: Discovery — 문제 발견
 
@@ -179,6 +181,8 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 | A.8 | [투자 메모](./docs/appendix/A.8-usecase-investment-memo.md) | 비즈니스 케이스 작성 및 이사회 Q&A 시뮬레이션 | P → L |
 | A.9 | [프로세스 플로우차트](./docs/appendix/A.9-usecase-process-flowchart.md) | Mermaid 기반 프로세스 문서화 | J → P |
 | A.10 | [콘텐츠 적응](./docs/appendix/A.10-usecase-content-adaptation.md) | 릴리즈 콘텐츠 6채널 동시 적응 및 발행 자동화 | J → P |
+| A.11 | [프롬프트 치트시트](./docs/appendix/A.11-prompt-cheatsheet.md) | 본문 핵심 프롬프트를 한 페이지로, 바로 복사해 쓰는 1~2줄 모음 | J → P |
+| A.12 | [FAQ·트러블슈팅](./docs/appendix/A.12-faq-troubleshooting.md) | 비개발자 PM이 자주 막히는 지점, 첫 30분 Quickstart + 증상→원인→해결 | J → P |
 
 ---
 
@@ -207,6 +211,16 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 "AI 프롬프트 작성법이 궁금해"             → ai-prompts-playbook (AI_PM companion prompt registry)
 ```
 
+### 두 가지 진입로
+
+- **인터랙티브 코스** — 레포를 클론한 뒤 해당 폴더에서 Claude Code 를 열고 `/start` 를 입력하세요. 레벨을 확인한 뒤 `/start-1`·`/start-2`·`/start-3` 트랙으로 직접 손으로 따라 하는 온보딩이 시작됩니다.
+- **플러그인 설치** — Claude Code 에서 두 줄이면 끝납니다.
+
+  ```text
+  /plugin marketplace add kimsanguine/AI_PM
+  /plugin install ai-pm@ai-pm
+  ```
+
 ---
 
 ## 프로젝트 구조
@@ -219,14 +233,14 @@ AI_PM/
 ├── 00-index.md                     # 전체 목차 및 학습 가이드
 │
 ├── 1.1 ~ 1.3                       # Part 1: 시작하기
-├── 2.1 ~ 2.6                       # Part 2: 기본기
-├── 3.1 ~ 3.5                       # Part 3: 고급 설정
+├── 2.0 ~ 2.7                       # Part 2: 기본기
+├── 3.1 ~ 3.7                       # Part 3: 고급 설정
 ├── 4.1 ~ 4.2                       # Part 4: Discovery
 ├── 5.1 ~ 5.2                       # Part 5: Definition
 ├── 6.1 ~ 6.3                       # Part 6: Delivery
 ├── 7.1 ~ 7.3                       # Part 7: Growth
 ├── 8.1 ~ 8.2                       # Part 8: 전략과 성장
-├── A.1 ~ A.10                      # Appendix: 실전 유즈케이스
+├── A.1 ~ A.12                      # Appendix: 실전 유즈케이스 + 치트시트 · FAQ
 │
 ├── .github/                        # "GitHub as PRD" 인프라
 │   ├── ISSUE_TEMPLATE/             # PRD / Discovery / RFC / UseCase / Bug
@@ -235,6 +249,9 @@ AI_PM/
 │   ├── scripts/                    # validate_frontmatter.py
 │   ├── labels.yml
 │   └── CODEOWNERS
+│
+├── .claude-plugin/
+│   └── marketplace.json            # /plugin 마켓플레이스 (ai-pm 플러그인 1종)
 │
 ├── .claude/
 │   └── agents/                     # engineering-reviewer / exec-advisor / user-researcher
@@ -250,19 +267,23 @@ AI_PM/
 ├── templates/
 │   ├── CLAUDE-md-starter.md
 │   ├── claude-home/                # ~/.claude/ 스타터 (CLAUDE.md + guides + skills)
-│   ├── commands/                   # /today /prd /status /discovery /competitor
-│   │                               #   /briefing /review /postmortem /retro
+│   ├── commands/                   # 14종 — /today /prd /status /discovery /competitor
+│   │                               #   /briefing /review /postmortem /retro /pm-setup
+│   │                               #   /start /start-1 /start-2 /start-3
 │   └── hooks/                      # stop-notify / posttooluse-fmt / sessionstart-load
 │
-└── skills/
+└── skills/                         # 8종
     ├── prd-generator/
     ├── discovery-synthesizer/
     ├── competitor-battlecard/
     ├── experiment-analyzer/
-    └── kpi-card-builder/
+    ├── kpi-card-builder/
+    ├── jtbd/
+    ├── opportunity-solution-tree/
+    └── working-backwards/
 ```
 
-> 🔭 **v1.2 예정**: `docs/partN/...` 폴더 재편 (36 cross-link 일괄 수정 PR), 신규 챕터 3.2.1 패턴 카탈로그 · 3.6 Claude Code on the web, Part 1~3 4.7 재검수.
+> 🔭 **변경 이력**: 버전별 변경 내역은 [CHANGELOG.md](./CHANGELOG.md) 에서 확인하세요.
 
 ---
 
@@ -288,6 +309,9 @@ AI_PM/
 | 자동화/증강/직접판단 프레임워크 | 본 가이드 제안 | 1.1, A.2 |
 | 4D AI 제품 전략 | 본 가이드 제안 | 8.1 AI 전략 |
 | 8축 CLAUDE.md 프레임워크 | 본 가이드 제안 | 3.2 |
+| Jobs to be Done (JTBD) | Clayton Christensen / Anthony Ulwick | `skills/jtbd` |
+| Opportunity Solution Tree (OST) | Teresa Torres, Continuous Discovery Habits | `skills/opportunity-solution-tree` |
+| Working Backwards (PR-FAQ) | Amazon | `skills/working-backwards` |
 
 ---
 

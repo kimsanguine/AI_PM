@@ -4,6 +4,39 @@
 
 ---
 
+## [v1.4.0] — 2026-06-02
+
+### Added
+
+- 신규 챕터 `docs/part2-basics/2.0-toolkit-map.md` — Claude Code 도구 5범주 지도(기억·스킬·자동 실행·대리인·확장), Part 2 입문 overview.
+- 신규 챕터 `docs/part3-advanced/3.7-plugins-and-marketplace.md` — 명령·스킬·에이전트·훅·MCP를 한 묶음으로 포장·공유하는 플러그인 + 마켓플레이스 2단계 설치.
+- 신규 챕터 `docs/appendix/A.11-prompt-cheatsheet.md` — 본문 핵심 프롬프트 1페이지 치트시트(바로 복사해 쓰는 1~2줄 모음).
+- 신규 챕터 `docs/appendix/A.12-faq-troubleshooting.md` — 비개발자 PM 첫 30분 Quickstart + 증상→원인→해결 FAQ·트러블슈팅 허브.
+- 비개발자 온램프 보강 — 데스크톱앱/IDE 진입, 30초 검증 루틴, 입력 비교 실습, 발동조건 판별표, auto memory 절.
+- 프레임워크 스킬 3종 — `jtbd`(JTBD, Clayton Christensen / Anthony Ulwick), `opportunity-solution-tree`(OST, Teresa Torres), `working-backwards`(PR-FAQ, Amazon).
+- `templates/commands/pm-setup.md` — `/pm-setup` 대화형 PM 컨텍스트 부트스트랩(CLAUDE.md 8축 + INDEX.md 초안 자동 작성).
+- 인터랙티브 코스 — `templates/commands/start.md` · `start-1.md` · `start-2.md` · `start-3.md`(`/start`~`/start-3` 레벨별 손으로 따라 하는 온보딩).
+- `.claude-plugin/marketplace.json` — `ai-pm` 플러그인 (`/plugin marketplace add kimsanguine/AI_PM` → `/plugin install ai-pm@ai-pm`).
+
+### Changed
+
+- 자산 카운트 일괄 갱신 — 슬래시 9 → 14, 스킬 5 → 8, 플러그인 1종 신규(README 구조 박스 · `CLAUDE.md` 자산 현황 · `INDEX.md` 목록).
+- README — 버전 배지 `guide-v1.3` → `guide-v1.4`, Part 2 표에 2.0 · Part 3 표에 3.7 · Appendix 표에 A.11/A.12 행 추가, "빠른 시작"에 인터랙티브 코스/플러그인 설치 두 진입로, 이론 프레임워크 표에 JTBD · OST · Working Backwards 추가.
+- `CLAUDE.md` 푸터 `guide_version` v1.3 → v1.4.
+
+### Fixed
+
+- hooks `settings.json` 3중 중첩 스키마 교정.
+- MCP 설정을 `claude mcp add` / `.mcp.json` / 원격 OAuth 기준으로 현행화.
+- `#` 메모리를 영구 auto memory 로 정정.
+- 설치 경로(native installer · `| bash` · 플랜 · 브라우저 로그인) · `claude doctor` · 모델명 현행화.
+- effort 순서/기본값(high) 정정.
+- 슬래시 ↔ 스킬 병합 반영.
+- 2.5 에이전트 팀 현행화 — Dynamic Workflows 공존.
+- `claude agents list` → `/agents` 로 교정.
+
+---
+
 ## [v1.3.0] — 2026-06-02
 
 ### Added

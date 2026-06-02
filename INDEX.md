@@ -23,6 +23,7 @@
 
 ## Part 2 — Basics
 
+- `docs/part2-basics/2.0-toolkit-map.md` — use: 도구 5범주 지도 (기억·스킬·자동 실행·대리인·확장) 입문 overview
 - `docs/part2-basics/2.1-files-and-input.md` — use: 파일/이미지 입력, XML 태그 패턴
 - `docs/part2-basics/2.2-modes-and-depth.md` — use: effort · adaptive thinking
 - `docs/part2-basics/2.3-project-memory.md` — use: 메모리 계층 (global ↔ repo)
@@ -41,6 +42,7 @@
 - `docs/part3-advanced/3.4-custom-skills.md` — use: SKILL.md 패키지
 - `docs/part3-advanced/3.5-automation-n8n.md` — use: 외부 자동화
 - `docs/part3-advanced/3.6-claude-code-on-the-web.md` — use: 웹·모바일·GitHub Action 실행 환경
+- `docs/part3-advanced/3.7-plugins-and-marketplace.md` — use: 플러그인 묶음 배포 + 마켓플레이스 2단계 설치
 
 ## Part 4 — Discovery
 
@@ -81,6 +83,8 @@
 - `docs/appendix/A.8-usecase-investment-memo.md`
 - `docs/appendix/A.9-usecase-process-flowchart.md`
 - `docs/appendix/A.10-usecase-content-adaptation.md`
+- `docs/appendix/A.11-prompt-cheatsheet.md` — use: 핵심 프롬프트 1페이지 치트시트
+- `docs/appendix/A.12-faq-troubleshooting.md` — use: 첫 30분 Quickstart + FAQ·트러블슈팅 허브
 
 ## 자산
 
@@ -95,6 +99,11 @@
 - `review.md` — `/review` 검증 사다리 4단계 review
 - `postmortem.md` — `/postmortem` blameless 사후 분석
 - `retro.md` — `/retro` 트랜스크립트 폐루프 회고
+- `pm-setup.md` — `/pm-setup` 대화형 PM 컨텍스트 부트스트랩 (CLAUDE.md + INDEX.md 초안)
+- `start.md` — `/start` 인터랙티브 온보딩 코스 인덱스
+- `start-1.md` — `/start-1` 입문 트랙 (Part 1~2)
+- `start-2.md` — `/start-2` 활용 트랙 (Part 2~3)
+- `start-3.md` — `/start-3` 워크플로 관통 트랙 (Part 4~6)
 
 ### 스킬 (`skills/`)
 
@@ -103,6 +112,9 @@
 - `competitor-battlecard/SKILL.md` — 경쟁사 카드
 - `experiment-analyzer/SKILL.md` — A/B 결과 분석
 - `kpi-card-builder/SKILL.md` — KPI 정의 카드
+- `jtbd/SKILL.md` — Jobs to be Done job statement 재구성
+- `opportunity-solution-tree/SKILL.md` — outcome → opportunity → solution → experiment 트리
+- `working-backwards/SKILL.md` — PR-FAQ 역방향 기획
 
 ### 서브에이전트 (`.claude/agents/`)
 
@@ -126,6 +138,10 @@
 
 - `sot-policy.md` — Notion ↔ GitHub SoT
 - `closed-loop.md` — `/retro` 운영, One rule = one place
+
+### 플러그인 (`.claude-plugin/`)
+
+- `marketplace.json` — `ai-pm` 마켓플레이스/플러그인 정의 (`/plugin marketplace add kimsanguine/AI_PM` → `/plugin install ai-pm@ai-pm`)
 
 ### 기타
 
@@ -154,4 +170,4 @@
 
 ---
 
-last_updated: 2026-05-19
+last_updated: 2026-06-02

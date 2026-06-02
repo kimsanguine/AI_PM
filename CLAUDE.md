@@ -31,10 +31,11 @@
 
 현재 자산 (참고):
 
-- 슬래시 9종: `today`, `prd`, `status`, `discovery`, `competitor`, `briefing`, `review`, `postmortem`, `retro`
-- 스킬 5종: `prd-generator`, `discovery-synthesizer`, `competitor-battlecard`, `experiment-analyzer`, `kpi-card-builder`
+- 슬래시 14종: `today`, `prd`, `status`, `discovery`, `competitor`, `briefing`, `review`, `postmortem`, `retro`, `pm-setup`, `start`, `start-1`, `start-2`, `start-3`
+- 스킬 8종: `prd-generator`, `discovery-synthesizer`, `competitor-battlecard`, `experiment-analyzer`, `kpi-card-builder`, `jtbd`, `opportunity-solution-tree`, `working-backwards`
 - 서브에이전트 3종: `engineering-reviewer`, `exec-advisor`, `user-researcher`
 - 훅 3종: `stop-notify.sh`, `posttooluse-fmt.sh`, `sessionstart-load.sh`
+- 플러그인 1종: `.claude-plugin/marketplace.json` (`ai-pm` — `/plugin marketplace add kimsanguine/AI_PM` → `/plugin install ai-pm@ai-pm`)
 
 ## 4. Tools — 도구·모델
 
@@ -91,4 +92,4 @@
 
 last_updated: 2026-06-02
 claude_model: claude-opus-4-8
-guide_version: v1.3
+guide_version: v1.4
