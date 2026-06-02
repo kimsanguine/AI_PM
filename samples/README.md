@@ -7,9 +7,9 @@
 
 | 파일 | 관련 챕터 | 설명 |
 |------|----------|------|
-| `user-survey-results.csv` | [4.1 유저 리서치](../4.1-discovery-user-research.md) | 30명 사용자 설문 데이터 (만족도, NPS, 기능 사용, 불만 사항) |
-| `ab-test-results.csv` | [7.1 실험 분석](../7.1-growth-experiment-analysis.md) | 2주간 A/B 테스트 데이터 (방문자, 가입, 전환, 매출) |
-| `competitor-data.json` | [4.2 경쟁사 분석](../4.2-discovery-competitive-analysis.md) | 경쟁사 3곳 구조화 데이터 (가격, 기능, 강점/약점, 시장) |
+| `user-survey-results.csv` | [4.1 유저 리서치](../docs/part4-discovery/4.1-discovery-user-research.md) | 30명 사용자 설문 데이터 (만족도, NPS, 기능 사용, 불만 사항) |
+| `ab-test-results.csv` | [7.1 실험 분석](../docs/part7-growth/7.1-growth-experiment-analysis.md) | 2주간 A/B 테스트 데이터 (방문자, 가입, 전환, 매출) |
+| `competitor-data.json` | [4.2 경쟁사 분석](../docs/part4-discovery/4.2-discovery-competitive-analysis.md) | 경쟁사 3곳 구조화 데이터 (가격, 기능, 강점/약점, 시장) |
 
 ## 사용 방법
 

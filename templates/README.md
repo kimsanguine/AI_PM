@@ -21,9 +21,9 @@ cp templates/CLAUDE-md-starter.md ./CLAUDE.md
 
 | 파일 | 커맨드 | 관련 챕터 | 설명 |
 |------|--------|----------|------|
-| `commands/today.md` | `/today` | [3.3 슬래시 커맨드](../3.3-slash-commands.md) | 오늘의 PM 브리핑 자동 생성 |
-| `commands/prd.md` | `/prd [기능명]` | [5.1 PRD 작성](../5.1-definition-write-prd.md) | 소크라틱 대화 기반 PRD 초안 생성 |
-| `commands/status.md` | `/status` | [A.5 상태 보고서](../A.5-usecase-status-report.md) | 주간 상태 보고서 자동 생성 |
+| `commands/today.md` | `/today` | [3.3 슬래시 커맨드](../docs/part3-advanced/3.3-slash-commands.md) | 오늘의 PM 브리핑 자동 생성 |
+| `commands/prd.md` | `/prd [기능명]` | [5.1 PRD 작성](../docs/part5-definition/5.1-definition-write-prd.md) | 소크라틱 대화 기반 PRD 초안 생성 |
+| `commands/status.md` | `/status` | [A.5 상태 보고서](../docs/appendix/A.5-usecase-status-report.md) | 주간 상태 보고서 자동 생성 |
 
 ### 설치법
 

@@ -6,6 +6,9 @@
 # Notion 스킴 — 외부 검증 불가
 ^notion://
 
+# Linear 스킴 — 외부 검증 불가 (A.4 데일리 브리핑 use case 의 linear://issue/ 링크)
+^linear://
+
 # Claude 플랫폼 docs — rate limit / CI 환경에서 종종 429
 ^https://platform\.claude\.com/
 ^https://code\.claude\.com/

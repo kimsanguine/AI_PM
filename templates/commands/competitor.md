@@ -45,6 +45,7 @@
 | Price | $29/mo | $99/mo | Free + $/seat |
 | Target | mid-market PM | enterprise | startup |
 | Weakness | 자동화 부족 | 가격 진입장벽 | 데이터 한계 |
+
 </good>
 <bad>
 A 는 좋고 B 는 별로다. 우리가 더 낫다.
