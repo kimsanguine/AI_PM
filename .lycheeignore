@@ -16,3 +16,11 @@
 
 # Claude Code session URL (커밋 footer 의 trailer, private)
 ^https://claude\.ai/code/
+
+# 예시/플레이스홀더 URL — 튜토리얼 설명용, 외부 검증 의미 없음
+^https://github\.com/username/
+^https://looker\.company\.com
+^https://planmyday-routine-proto-v1\.vercel\.app
+
+# 자매 저장소 hplan — 비공개(시그니처) 저장소라 익명 접근 404, 공개 시 정상 동작
+^https://github\.com/kimsanguine/hplan
