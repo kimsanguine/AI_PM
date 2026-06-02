@@ -236,12 +236,12 @@ Day 5 신규 사용자 리텐션 34% → 42% 달성 (Day 7 기준)
 이제 PM은 멀티에이전트 리뷰를 요청합니다:
 
 ```
-> /agents/engineer-reviewer 이 PRD의 기술 실현성을 리뷰해줘.
+> @engineer-reviewer 이 PRD의 기술 실현성을 리뷰해줘.
 >   - 제안 알고리즘의 기술 난이도
 >   - 백엔드 구현 예상 시간
 >   - 위험 요소
 
-> /agents/exec-reviewer 이 PRD의 비즈니스 임팩트를 평가해줘.
+> @exec-reviewer 이 PRD의 비즈니스 임팩트를 평가해줘.
 >   - 예상 리텐션 개선 현실성
 >   - 시장 경쟁력 영향
 >   - 다른 전략과의 우선순위

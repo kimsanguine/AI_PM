@@ -330,6 +330,8 @@ AI_PM/
 > 💡 **빌드 게이트가 궁금하다면** → [hplan](https://github.com/kimsanguine/hplan)에서 고객 증거·배제 기록·COGS 기반의 결정적 빌드 판단법을 확인하세요.
 > 💡 **AI 프롬프트 활용법**이 궁금하다면 → [ai-prompts-playbook](https://github.com/kimsanguine/ai-prompts-playbook)에서 전문가의 눈 → 합의 너머 → 자기 검증의 3-Layer 프레임워크를 확인하세요.
 
+AI_PM은 PM 워크플로 특화 가이드입니다. 일반 지식 작업을 위한 Anthropic 공식 [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)와 함께 사용하면 더욱 효과적입니다.
+
 ---
 
 ## Contributing
