@@ -4,6 +4,30 @@
 
 ---
 
+## [v1.5.0] — 2026-06-02
+
+### Fixed
+
+- `docs/part2-basics/2.2-modes-and-depth.md` — thinking 키워드 교정: `think`/`think harder`는 일반 텍스트로 전달되며 `ultrathink`만이 deep reasoning 키워드로 인식됨(공식 확정). adaptive reasoning 설명 교정: Opus 4.7+ 에서 항상 on이며 끄는 것이 불가능함.
+- `docs/part6-delivery/6.1-delivery-vibe-coding.md` — MCP 설정 현행화: `settings.json mcpServers` 블록 → `claude mcp add` CLI / `.mcp.json` 방식으로 교정.
+- `docs/appendix/A.1-running-scenario.md` — 서브에이전트 호출 문법 교정: `/agents/<이름>` → `@<agent-name>` 형식으로 교정.
+- `docs/part2-basics/2.7-hooks.md` — 훅 이벤트 수 정정: "30종" → 8가지(PreToolUse·PostToolUse·Notification·Stop·SubagentStop·PreCompact·SessionStart·SessionEnd).
+- `docs/part8-strategy/8.2-growth-path.md` — 레거시 링크 교정: `docs.anthropic.com` → `platform.claude.com/docs`.
+
+### Added
+
+- `docs/part3-advanced/3.7-plugins-and-marketplace.md` — 외부 플러그인 보안 체크 4단계 및 AI_PM vs knowledge-work-plugins 생태계 포지셔닝 표.
+- `docs/part3-advanced/3.4-custom-skills.md` — 스킬 자동 발동 실패 진단 5단계 절 추가.
+- `docs/part3-advanced/3.1-mcp-integration.md` — MCP 설치 후 연동 확인 체크리스트 추가.
+- `docs/appendix/A.12-faq-troubleshooting.md` — Quickstart 2-트랙화(데스크톱/IDE 무터미널 + CLI), 외부 스킬 보안 FAQ, 스킬 자동 발동 실패 FAQ, MCP 연동 검증 FAQ, 토큰 비용 관리 FAQ 추가.
+- `docs/part1-foundations/1.3-install-and-first-run.md` — 터미널 없이 시작하기(데스크톱 앱/IDE) 트랙 추가.
+- `docs/part2-basics/2.6-human-in-the-loop.md` — Claude 응답 신뢰 수준 3-tier 표(완료/시도/불확실) 추가.
+- `docs/part1-foundations/1.2-what-is-claude-code.md` — 일반 챗봇 vs Claude Code 기능 비교표 추가.
+- `docs/part6-delivery/6.1-delivery-vibe-coding.md` — "처음엔 작게 시작하세요" 진입 조언 추가.
+- `README.md` — `knowledge-work-plugins` 생태계 포지셔닝 언급 추가.
+
+---
+
 ## [v1.4.0] — 2026-06-02
 
 ### Added
