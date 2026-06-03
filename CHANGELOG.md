@@ -4,6 +4,21 @@
 
 ---
 
+## [v1.7.0] — 2026-06-03
+
+### Added
+
+- `docs/part2-basics/2.4-custom-subagents.md` — `/agents` 명령어 대화형 에이전트 생성(Installed·Create UI), 파일 직접 작성 4섹션 템플릿, `@에이전트명` 호출 방법, PM 필수 3종 에이전트 표, `/agents/<이름>` 형식 오용 경고 추가.
+- `docs/part2-basics/2.3-project-memory.md` — Claude MD Management 공식 플러그인 상세 소개: `/revise-claude-md`·`claude-md-improver` 스킬·5단계 워크플로우·6가지 품질 기준·GitHub 링크 포함.
+- `docs/part3-advanced/3.2-claude-md-deep-dive.md` — 실전 전역 CLAUDE.md 예시: 운영 중인 9개 룰 전문 공개(Think Before Coding·Simplicity First·Surgical Changes·Goal-Driven·모델 판단 작업에만·Tests verify intent·Checkpoint·Fail loud·에이전트 Scope) + 설계 원칙 해설.
+- `docs/part3-advanced/3.1-mcp-integration.md` — 바이브코딩 필수 MCP & 플랫폼 8종 소개: Supabase·Vercel·Netlify·Cloudflare·Railway·Render·context7·GitHub·Insforge, 권장 설치 순서.
+- `docs/part6-delivery/6.1-delivery-vibe-coding.md` — 이미지·시각자료 활용(드래그앤드롭·Ctrl+Y·@참조), 빠른 디자인 이터레이션(ASCII 목업·Mermaid 차트), Vercel 배포(MCP 연결·수동 명령어·장점) 추가.
+- `docs/part2-basics/2.7-hooks.md` — Hook으로 QA 자동화: PostToolUse+Stop Hook 자동 테스트·린트, QA 목표 지정 프롬프트, 테스트 계획→병렬 서브에이전트 분배 2단계, E2E Playwright 폴더 구조, 엣지 케이스 요청 패턴.
+- `docs/appendix/A.11-prompt-cheatsheet.md` — CoT 프롬프팅(단순 요청 vs CoT 비교표·트리거 표현), `<thinking>`/`<answer>` 태그 분리 패턴(요청 방법·XML 출력 예시·사용 상황), SPEC.md 기획서(기술스택·ADR·아키텍처·디자인 구성) 추가.
+- `docs/appendix/A.12-faq-troubleshooting.md` — 필수 단축키 5종(ESC·ESC+ESC·Shift+Enter·Shift+Tab·Tab) + 경로 자동완성, `-c`/`-r` CLI 플래그 비교, Explanatory Output 설명형 출력 설정 방법·초급자 중요성·비교표·`/config` 권장 옵션 4가지 추가.
+
+---
+
 ## [v1.6.0] — 2026-06-03
 
 ### Added

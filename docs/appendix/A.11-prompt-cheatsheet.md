@@ -113,6 +113,114 @@ last_updated: 2026-06-02
 
 ---
 
+## CoT 프롬프팅: Claude가 단계별로 생각하게 만들기
+
+CoT(Chain-of-Thought)는 Claude에게 결론을 바로 내리지 말고 단계별로 추론하도록 요청하는 기법입니다.
+복잡한 분석이나 설계 결정에서 결과 품질이 크게 높아집니다.
+
+### 기본 패턴
+
+| ❌ 단순 요청 | ✅ CoT 요청 |
+|---|---|
+| "이 아키텍처가 맞나?" | "이 아키텍처의 장단점을 단계별로 분석해줘" |
+| "어떤 DB가 좋아?" | "요구사항을 고려해서 DB 선택지를 심사숙고해줘" |
+| "에러 고쳐줘" | "에러 원인을 단계별로 추론한 후 해결 방안을 제시해줘" |
+
+### CoT 트리거 표현
+
+- "심사숙고해줘"
+- "단계별로 생각해줘"
+- "추론 과정을 보여줘"
+- "결론 전에 논거를 먼저 나열해줘"
+
+> **참고**: `ultrathink` 키워드는 모델이 더 깊게 추론하도록 하는 공식 Claude 키워드입니다.
+> `think`, `think hard`, `think harder`는 일반 텍스트로 전달되므로 효과가 없습니다.
+
+---
+
+## 사고와 답변 분리: `<thinking>`/`<answer>` 태그 패턴
+
+Claude의 추론 과정과 최종 답변을 구조적으로 분리하고 싶을 때 태그를 명시적으로 요청합니다.
+
+### 요청 방법
+
+```
+"REST API를 구축하려면 어떻게 해야 해?
+생각 과정을 <thinking> 태그에 입력해주고,
+그것을 분석한 결과를 <answer> 태그에 답변해줘."
+```
+
+### 출력 예시
+
+```xml
+<thinking>
+REST API 구축 시 고려할 요소:
+1. 프레임워크 선택: Express vs Fastify vs Hono (경량화, 타입스크립트 지원)
+2. 인증 방식: JWT vs Session (무상태 vs 서버 세션)
+3. DB 연결: ORM(Prisma) vs 직접 쿼리
+4. 에러 처리: 표준 에러 코드 정의 필요
+...
+</thinking>
+
+<answer>
+PM 관점에서 권장하는 구조:
+- 프레임워크: Express.js (생태계 최대, 레퍼런스 풍부)
+- 인증: JWT (서버리스 환경 호환)
+...
+</answer>
+```
+
+### 언제 쓰나
+
+- **복잡한 기술 결정**: 아키텍처, DB 선택, 라이브러리 비교
+- **긴 분석 작업**: 경쟁사 분석, 유저 리서치 합성
+- **검증이 중요한 작업**: 추론 과정이 맞는지 확인하고 싶을 때
+- **교육 목적**: Claude가 왜 그 결론에 도달했는지 이해하고 싶을 때
+
+---
+
+## SPEC.md: 기술 명세를 함께 만들기
+
+PRD.md가 "무엇을 만들고 왜"를 담는다면, SPEC.md는 "어떻게 만드는가"를 담습니다.
+
+### SPEC.md 필수 구성 요소
+
+```markdown
+# SPEC.md
+
+## 기술 스택
+- Frontend: Next.js 14 (App Router)
+- Backend: FastAPI / Express.js
+- Database: Supabase (PostgreSQL)
+- Infra: Vercel + Cloudflare Workers
+- ML: (해당 시) Anthropic API
+
+## 주요 변경 내역 (ADR)
+<!-- Architecture Decision Record -->
+### ADR-001: DB 선택
+- 결정: Supabase
+- 이유: RLS 내장, 실시간 구독, Auth 포함
+- 대안: PlanetScale, Neon
+
+## 아키텍처 (ARCHITECTURE)
+[Mermaid 다이어그램 또는 ASCII로 시스템 구조]
+
+## 디자인 (DESIGN)
+[ASCII 목업 또는 Figma 링크]
+```
+
+### Claude Code에서 SPEC.md 만들기
+
+```
+"현재 PRD.md를 기반으로 SPEC.md를 작성해줘.
+기술 스택, ADR, 아키텍처 다이어그램(Mermaid)을 포함해줘.
+아직 코드는 작성하지 말아줘"
+```
+
+PRD.md → SPEC.md 순서로 작성하면, 개발 시작 전에 기술 방향을 확정하고 Claude Code에게 일관된 컨텍스트를 줄 수 있습니다.
+
+---
+
 ## companion 레지스트리와의 관계
 
 본 치트시트는 **이 가이드 안에서 쓰는 빠른 참조**입니다. 별도 companion 레포 [ai-prompts-playbook](https://github.com/kimsanguine/ai-prompts-playbook)은 같은 프롬프트를 재사용 가능한 prompt card로 더 깊이 정리한 레지스트리로, 본 문서와 중복이 아니라 역할이 다릅니다. 빠르게 복사하려면 이 페이지를, 카드 단위로 관리·재사용하려면 playbook을 보세요.
