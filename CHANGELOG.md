@@ -4,6 +4,22 @@
 
 ---
 
+## [v1.6.0] — 2026-06-03
+
+### Added
+
+- 신규 챕터 `docs/part3-advanced/3.8-ralph-loop-automation.md` — `--max-iterations + --completion-promise` 플래그로 조건 달성까지 자율 반복하는 PM 리서치 자동화 (경쟁사 리스트업·리드 수집 실전 예시).
+- 신규 챕터 `docs/part6-delivery/6.2-agent-product-ui.md` — 에이전트 제품 PM UI 판단 원칙: Non-negotiable 4원칙(투명성·사용자 제어·선제 피드백·에러 복구), Agent 특화 KPI(Task Completion Rate·Autonomy Trust Score), Autonomy-Trust Matrix.
+- `docs/part3-advanced/3.5-automation-n8n.md` — Claude 생태계 3-레이어 아키텍처 섹션: Claude.ai(전략 대화)·Claude Code(파일 실행)·n8n(스케줄 배경 자동화) 역할 경계와 L1~L4 단계적 도입 로드맵 추가.
+- `docs/part5-definition/5.1-definition-write-prd.md` — PRD-in-Repo 패턴(Living Document 루프) 및 Super MVP 3단계 프로토타이핑(ChatGPT 원형→Claude Code 구현→3모델 A/B 비교) 섹션 추가.
+- `docs/part2-basics/2.5-agent-teams.md` — Boris Cherny(Claude Code 제작자)의 병렬 세션 12-tip 체크리스트: 로컬 5+웹 10=15개 동시 세션, "덜 똑똑한 모델 반복 > Opus 1-shot" 역설 원칙, Sub-agent 전문화 패턴 추가.
+- `docs/part3-advanced/3.2-claude-md-deep-dive.md` — 8-layer 컨텍스트 모델 전체 그림(`/memory` 시각화 팁 포함), Lazy Loading(`@파일` 참조 분리, 토큰 80% 절감), 팀 Git 자동 업데이트 루프·AGENTS.md 멀티툴 호환 트릭·분기별 리뷰 체크리스트 추가.
+- `docs/part2-basics/2.2-modes-and-depth.md` — Plan Mode 실전 수치(토큰 30~50% 절감 이유, "수정 3번=토큰 3배" 비교) 및 7일 토큰 예산 운영 패턴(모델 역할 분리표) 추가.
+- `docs/part3-advanced/3.4-custom-skills.md` — 재사용 메커니즘 컨텍스트 비용 비교 매트릭스(CLAUDE.md·스킬·MCP·Sub-Agent) 및 WAT 프레임워크(Workflows+Agents+Tools, Tool Atomicity 원칙) 추가.
+- `docs/part2-basics/2.3-project-memory.md` — CLAUDE.md 점진적 구축 원칙("같은 내용 두 번이면 분리"), 다이어트 사이클(300줄→80줄, 토큰 4000→800), AGENTS.md 멀티툴 호환 트릭 추가.
+
+---
+
 ## [v1.5.0] — 2026-06-02
 
 ### Fixed
