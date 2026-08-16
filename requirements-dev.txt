@@ -1,0 +1,2 @@
+# Development-only dependency for independent Draft 2020-12 schema tests.
+jsonschema==4.25.1

@@ -28,6 +28,45 @@
 > 자매 PM 도구: **[hplan](https://github.com/kimsanguine/hplan)** — Product Build Gate (만들기 전 검증). AI_PM 이 "어떻게 만들 것인가" 라면, hplan 은 "정말 만들 것인가" 의 30분 체크리스트.
 >
 > 프롬프트 레지스트리: **[ai-prompts-playbook](https://github.com/kimsanguine/ai-prompts-playbook)** — 본 레포의 `/discovery`, `/competitor`, `/prd`와 PM 스킬 패턴을 재사용 가능한 prompt card로 정리한 companion playbook.
+>
+> 포트폴리오 운영: **[AI PM 포트폴리오 참조 운영](./docs/operations/ai-pm-portfolio.md)** — hplan과 signal-to-growth의 읽기 전용 handoff 경계.
+
+### PM 포트폴리오: 어떤 저장소를 언제 쓰는가
+
+AI_PM은 네 제품을 하나의 도구나 데이터베이스로 합치지 않습니다. PM이 판단
+책임을 잃지 않도록, 질문의 종류에 따라 아래 진입점을 사용합니다.
+
+| 지금 필요한 질문 | 사용할 제품 | 그 제품이 소유하는 것 | 이 레포의 역할 |
+| --- | --- | --- | --- |
+| 만들기 전에 투자할 가치가 있는가? | [hplan](https://github.com/kimsanguine/hplan) | Build Gate의 `GO`·`HOLD`·`INVESTIGATE` 판단 | Gate를 읽고 해석하는 playbook 제공 |
+| 고객 신호로 무엇을 실험하고 측정할까? | [signal-to-growth](https://github.com/kimsanguine/signal-to-growth) | 신호·실험·metric contract·outcome | 성장 운영의 질문과 평가 기준 제공 |
+| 역할과 검증 방식을 팀에 어떻게 정착시킬까? | AI_PM | 학습 자료·운영모델·PM-Eval 참고표 | 이 레포 자체가 답 |
+| 누가 읽고, 초안을 만들고, 외부 변경을 승인할까? | AI PM Plane (향후 fixture) | 정책·승인 receipt·audit trail | 정책 경계를 학습하고 검토 |
+
+AI_PM은 증거·결정·metric의 세 번째 원장을 만들지 않습니다. 원문과 실제 값은
+각 source system에 남기고, 제품 사이에는 **opaque reference**만 전달합니다.
+PM-Eval의 채점도 source record를 바꾸거나 다음 결정을 자동으로 내리지 않습니다.
+
+#### 합성 참조 루프: `GO → experiment → outcome → reconsideration`
+
+아래는 공개 fixture만 사용하는 운영 예시입니다. `CP-0001`, `EXP-0001`,
+`OUT-0001`은 내용이나 고객 정보를 뜻하지 않는 opaque 식별자입니다.
+
+1. hplan의 사람이 source record `hplan://checkpoint/CP-0001`에서 `GO`를
+   확정한다. hplan은 `build_gate_to_growth` Profile v0를 내보내지만 원래
+   checkpoint를 변경하지 않는다.
+2. signal-to-growth의 담당자가 그 참조를 근거로 source-native experiment를
+   연다. experiment와 metric의 본문·값은 signal-to-growth에만 남기고,
+   교차 문서에는 `stg://experiment/EXP-0001` 같은 참조만 쓴다.
+3. outcome이 완료되면 signal-to-growth는
+   `stg://outcome/OUT-0001`을 source record로 하는
+   `growth_outcome_to_reconsideration` Profile v0를 만든다. 이 Profile은
+   `reopen_reason`과 참조만 담은 **재검토 요청**이며 Gate 결론이 아니다.
+4. 지정된 사람은 hplan에서 원문 근거를 다시 보고 새 Gate 판단을 한다.
+   outcome이 `GO`·`HOLD`·`INVESTIGATE`를 자동으로 바꾸지 않는다.
+
+실습에서 Profile 형식은 [참조 운영 가이드](./docs/operations/ai-pm-portfolio.md)와
+[PM-Eval 참고표](./docs/operations/pm-eval-reference.md)를 함께 확인하세요.
 
 ---
 

@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/kimsanguine/AI_PM/contracts/ai-pm-handoff-profile-v0.schema.json",
+  "title": "AI PM Handoff Profile v0",
+  "description": "A reference-only handoff envelope between hplan and signal-to-growth.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile_version",
+    "project_id",
+    "source_system",
+    "source_record_ref",
+    "handoff_kind",
+    "status",
+    "evidence_refs",
+    "metric_refs",
+    "owner",
+    "review_at"
+  ],
+  "properties": {
+    "profile_version": {
+      "const": "0.1"
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "source_system": {
+      "enum": [
+        "hplan",
+        "signal-to-growth"
+      ]
+    },
+    "source_record_ref": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9+.-]*://\\S+$"
+    },
+    "handoff_kind": {
+      "enum": [
+        "build_gate_to_growth",
+        "growth_outcome_to_reconsideration"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9+.-]*://\\S+$"
+      }
+    },
+    "metric_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9+.-]*://\\S+$"
+      }
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "review_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|\\+00:00)$"
+    },
+    "reopen_reason": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "handoff_kind": {
+            "const": "build_gate_to_growth"
+          }
+        },
+        "required": [
+          "handoff_kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "source_system": {
+            "const": "hplan"
+          },
+          "source_record_ref": {
+            "pattern": "^hplan://\\S+$"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "handoff_kind": {
+            "const": "growth_outcome_to_reconsideration"
+          }
+        },
+        "required": [
+          "handoff_kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "source_system": {
+            "const": "signal-to-growth"
+          },
+          "source_record_ref": {
+            "pattern": "^stg://\\S+$"
+          }
+        },
+        "required": [
+          "reopen_reason"
+        ]
+      }
+    }
+  ]
+}

@@ -4,6 +4,24 @@
 
 ---
 
+## [v1.8.0] — 2026-08-17
+
+### Added
+
+- `AI PM Handoff Profile v0` schema, 표준 라이브러리 validator, 합성 fixture와
+  `docs/operations/ai-pm-portfolio.md` 운영 가이드 추가.
+- `README.md`와 `INDEX.md`에 hplan·signal-to-growth·AI_PM·AI PM Plane의
+  역할별 진입 경로, 합성 참조 루프, PM-Eval 참고표를 추가.
+
+### Fixed
+
+- Handoff contract schema test의 `jsonschema` 버전을 개발 manifest에 고정하고
+  clean-environment setup과 전용 CI 검증 경로를 추가.
+- `PUBLIC_SURFACE.md`로 교육용 `docs/` 공개 예외와 내부 설계·계획의 비공개
+  경계를 명시하고, contract CI가 내부 계획 파일에 의존하지 않도록 수정.
+
+---
+
 ## [v1.7.0] — 2026-06-03
 
 ### Added

@@ -1,0 +1,14 @@
+{
+  "profile_version": "0.1",
+  "project_id": "synthetic-project-0001",
+  "source_system": "hplan",
+  "source_record_ref": "hplan://checkpoint/CP-0001",
+  "handoff_kind": "build_gate_to_growth",
+  "status": "GO",
+  "evidence_refs": [
+    "hplan://evidence/EV-0001"
+  ],
+  "metric_refs": [],
+  "owner": "fixture-owner",
+  "review_at": "2026-08-18T09:00:00Z"
+}

@@ -10,6 +10,7 @@
 ## 운영 (Root)
 
 - `README.md` — owner: @kimsanguine — use: 첫 진입점, 학습 동선 — freshness: 2026-05
+- `PUBLIC_SURFACE.md` — owner: @kimsanguine — use: 공개 교육 자료와 비공개 내부 계획의 경계 — freshness: 2026-08
 - `CLAUDE.md` — owner: @kimsanguine — use: Claude Code 행동 규칙 (8축) — freshness: 2026-05
 - `INDEX.md` (본 파일) — owner: @kimsanguine — use: 지식 지도 — freshness: 2026-05
 - `CHANGELOG.md` — owner: @kimsanguine — use: 버전 이력 — freshness: 2026-05
@@ -136,6 +137,8 @@
 
 ### 운영 (`docs/operations/`)
 
+- `ai-pm-portfolio.md` — hplan ↔ signal-to-growth 읽기 전용 handoff profile과 제품 책임 경계
+- `pm-eval-reference.md` — source ownership·증거·사람 승인·자동 판단 금지 기준의 PM-Eval 참고표
 - `sot-policy.md` — Notion ↔ GitHub SoT
 - `closed-loop.md` — `/retro` 운영, One rule = one place
 

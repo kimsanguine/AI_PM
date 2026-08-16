@@ -1,0 +1,16 @@
+{
+  "profile_version": "0.1",
+  "project_id": "synthetic-project-0001",
+  "source_system": "signal-to-growth",
+  "source_record_ref": "stg://outcome/OUT-0001",
+  "handoff_kind": "growth_outcome_to_reconsideration",
+  "status": "COMPLETED",
+  "evidence_refs": [
+    "stg://evidence/EV-0001"
+  ],
+  "metric_refs": [
+    "stg://metric/MET-0001"
+  ],
+  "owner": "fixture-owner",
+  "review_at": "2026-08-25T09:00:00Z"
+}
