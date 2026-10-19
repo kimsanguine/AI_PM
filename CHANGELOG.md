@@ -4,6 +4,15 @@
 
 ---
 
+## [Unreleased]
+
+### Added
+
+- `research/2026-10-llm-job-market-langgraph-rag.md` — LangGraph/RAG 실습 강의 설계를 위한 채용 시장 리서치. JobKorea 키워드 집계, 공고 33건 키워드 코딩, 가설 검증, 8주 커리큘럼 결정, 출처 19건.
+- `INDEX.md`에 `research/` 섹션 추가.
+
+---
+
 ## [v1.8.0] — 2026-08-17
 
 ### Added

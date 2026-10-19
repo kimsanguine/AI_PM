@@ -150,6 +150,10 @@
 
 - `templates/CLAUDE-md-starter.md` — 새 프로젝트용 CLAUDE.md 스타터
 
+## 리서치 (`research/`)
+
+- `research/2026-10-llm-job-market-langgraph-rag.md` — owner: @kimsanguine — use: LangGraph/RAG 실습 강의 설계를 위한 국내 LLM 채용 공고 리서치 (33건 코딩 + 커리큘럼 결정) — freshness: 2026-10
+
 ## 샘플 데이터
 
 - `samples/ab-test-results.csv` — use: 7.1 A/B 분석 실습
