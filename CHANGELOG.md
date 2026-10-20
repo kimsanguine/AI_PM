@@ -10,6 +10,7 @@
 
 - `research/2026-10-llm-job-market-langgraph-rag.md` — LangGraph/RAG 실습 강의 설계를 위한 채용 시장 리서치. JobKorea 키워드 집계, 공고 33건 키워드 코딩, 가설 검증, 8주 커리큘럼 결정, 출처 19건.
 - `research/2026-10-hackathon-o1-plan-o2-o3-feasibility.md` — OCR 파싱 해커톤 O1(DART 재무제표) 계획안과 O2·O3 데이터 접근 가능성 조사. OpenDART·AI Hub·KIPRIS Plus 접근 조건 확인.
+- `research/2026-10-kmdb-graphrag-requirements.md` — KMDb 한국영화 GraphRAG 해커톤 과제 개발요건서. 정답 그래프 vs LLM 추출 그래프 비교, 멀티홉 QA 자동 생성, Naive/Graph/Hybrid 비교 설계.
 - `INDEX.md`에 `research/` 섹션 추가.
 
 ---

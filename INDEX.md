@@ -154,6 +154,7 @@
 
 - `research/2026-10-llm-job-market-langgraph-rag.md` — owner: @kimsanguine — use: LangGraph/RAG 실습 강의 설계를 위한 국내 LLM 채용 공고 리서치 (33건 코딩 + 커리큘럼 결정) — freshness: 2026-10
 - `research/2026-10-hackathon-o1-plan-o2-o3-feasibility.md` — owner: @kimsanguine — use: OCR 파싱 해커톤 O1(DART) 계획안과 O2(행정문서)·O3(혼합 레이아웃) 데이터 접근 가능성 조사 — freshness: 2026-10
+- `research/2026-10-kmdb-graphrag-requirements.md` — owner: @kimsanguine — use: KMDb 한국영화 GraphRAG 해커톤 과제 개발요건서 (데이터 매핑, 사용자 스토리, 기능·비기능 요건, 평가, 일정) — freshness: 2026-10
 
 ## 샘플 데이터
 
