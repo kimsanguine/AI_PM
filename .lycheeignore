@@ -27,3 +27,6 @@
 
 # OpenDART 개발가이드 — 서버 TLS 설정이 lychee(rustls)와 호환되지 않아 HandshakeFailure 발생. 브라우저·curl 에서는 정상 (2026-10 확인)
 ^https://opendart\.fss\.or\.kr/
+
+# 잡코리아 검색 결과 페이지 — 동적 검색 스냅샷이라 외부 검증 의미 없음. CI 러너에서 20초 타임아웃 반복 (2026-10 확인). 개별 공고(GI_Read)는 계속 검증
+^https://www\.jobkorea\.co\.kr/Search
