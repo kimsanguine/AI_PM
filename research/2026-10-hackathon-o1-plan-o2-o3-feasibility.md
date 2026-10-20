@@ -231,6 +231,6 @@ PDF 확보는 쉽다. 정답 라벨이 없다. 특허 공보에는 레이아웃 
 - [AI Hub 건축 도면 데이터 (71465)](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71465)
 - [AI Hub 특허 지식베이스](https://aihub.or.kr/aidata/30)
 - [KIPRISPlus 특허·실용 공개·등록공보 REST API](https://www.data.go.kr/data/15065437/openapi.do?recommendDataYn=Y)
-- [한국산업안전보건공단 기술지원규정(KOSHA GUIDE) 조회 API](https://data.go.kr/catalog/15144147/openapi.json)
+- [한국산업안전보건공단 기술지원규정(KOSHA GUIDE) 조회 API](https://www.data.go.kr/data/15144147/openapi.do)
 - [PulseBench-Tab 다국어 표 추출 벤치마크](https://arxiv.org/pdf/2606.07534)
 - [KoViDoRe (Upstage Document Parse 사용 사례)](https://arxiv.org/pdf/2608.20840)

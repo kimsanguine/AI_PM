@@ -24,3 +24,6 @@
 
 # 자매 저장소 hplan — 비공개(시그니처) 저장소라 익명 접근 404, 공개 시 정상 동작
 ^https://github\.com/kimsanguine/hplan
+
+# OpenDART 개발가이드 — 서버 TLS 설정이 lychee(rustls)와 호환되지 않아 HandshakeFailure 발생. 브라우저·curl 에서는 정상 (2026-10 확인)
+^https://opendart\.fss\.or\.kr/
