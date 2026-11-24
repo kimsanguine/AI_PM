@@ -1,0 +1,26 @@
+[
+  {
+    "id": "F-002",
+    "behavior": "사용자가 월 구독 결제를 시작할 수 있습니다.",
+    "verification": "Stripe 테스트 카드 4242로 결제 → 웹훅 수신 → DB에 active 행 생성",
+    "state": "active",
+    "owner": "agent",
+    "notes": ""
+  },
+  {
+    "id": "F-003",
+    "behavior": "결제 성공 시 사용자에게 영수증 이메일이 발송됩니다.",
+    "verification": "테스트 결제 후 메일함에서 영수증 도착 여부와 금액 표기를 확인합니다.",
+    "state": "failing",
+    "owner": "agent",
+    "notes": "발신 도메인 인증 미완료로 스팸함으로 분류됨."
+  },
+  {
+    "id": "F-004",
+    "behavior": "[한 줄로 무엇을 하는가]",
+    "verification": "[어떻게 확인하는가. 자동 검증이 어렵다면 수동 절차도 됩니다]",
+    "state": "blocked",
+    "owner": "[agent 또는 사람]",
+    "notes": "F-005 검색 범위 결정 대기 중"
+  }
+]

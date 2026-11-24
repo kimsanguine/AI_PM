@@ -38,6 +38,18 @@ cp templates/commands/*.md .claude/commands/
 > /status
 ```
 
+## 루틴팩 v1
+
+[Harness Engineering Playbook](https://habix.ai/playbook/harness-engineering)의 매일 쓰는 파일 5종을 빈칸 양식으로 묶었습니다. 자세한 사용법은 [routine-pack-v1/README.md](routine-pack-v1/README.md)를 보세요.
+
+| 파일 | 설명 |
+|------|------|
+| `routine-pack-v1/CLAUDE.pm.md`, `CLAUDE.solo-builder.md`, `CLAUDE.marketer.md` | `CLAUDE.md` 3종 변형(PM / 1인 빌더 / 마케터). 하나만 골라 `CLAUDE.md`로 복사 |
+| `routine-pack-v1/feature_list.json` | 작업 항목마다 `id`, `behavior`, `verification`, `state` |
+| `routine-pack-v1/progress.md` | 세션 끝 5칸 메모: 오늘 한 일 / 막힌 곳 / 내일 가장 먼저 할 일 / 사람 결정이 필요한 항목 / 다음 세션 첫 명령 |
+| `routine-pack-v1/intent_sheet.md` | 의도, 결과 정의, 제약, 정지 규칙, 평가 지표, 휴먼 체크포인트 한 장 |
+| `routine-pack-v1/session-end-checklist.md` | 세션 종료 5분 전 10가지 확인 |
+
 ---
 
 > **© 2026 김생근 (Sanguine Kim)** | AI Agent Lead & AI Tutor
