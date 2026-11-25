@@ -4,6 +4,16 @@
 
 ---
 
+## [v1.9.1] - 2026-11-25
+
+### Fixed
+
+- Part 6에 6.2가 두 개 있던 번호 중복을 고쳤다. 에이전트 제품 UI 판단 원칙을 6.4로 옮겼다(`6.2-agent-product-ui.md` → `6.4-agent-product-ui.md`, README·`00-index.md`·`INDEX.md` 표 순서 함께).
+- `/polish` 스타터 스킬을 Claude Code가 읽는 위치 형식(`templates/claude-home/skills/polish/SKILL.md`)으로 옮겼다. 폴더째 복사하면 바로 로드된다.
+- 문서 3곳의 거친 표현("박다")을 "적다"로 바꿨다.
+
+---
+
 ## [v1.9.0] - 2026-11-25
 
 Claude Code 공식 문서(2026-11 사본)와 대조해 사실 오류와 낡은 서술을 고친 라운드다. 구조 개편과 새 챕터는 없다.

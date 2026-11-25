@@ -26,7 +26,7 @@ Notion (raw, 탐색)  ──promote──▶  GitHub (정제, 정본)
 ```
 
 - **Promotion 규칙**: Notion 노트에서 결론이 나오면 → GitHub Issue/PR 로 옮긴다.
-- Notion 페이지 상단에 `[Promoted to GH #123]` 한 줄을 박는다 (자동화 또는 수동).
+- Notion 페이지 상단에 `[Promoted to GH #123]` 한 줄을 적는다 (자동화 또는 수동).
 - 역방향(GitHub → Notion)은 **인용·링크만** 허용. 본문을 Notion에 복제하지 않는다.
 
 ## 3. 자동화 트리거
