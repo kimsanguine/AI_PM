@@ -60,8 +60,8 @@
 
 - `docs/part6-delivery/6.1-delivery-vibe-coding.md`
 - `docs/part6-delivery/6.2-delivery-visual-assets.md`
-- `docs/part6-delivery/6.2-agent-product-ui.md`: use: 에이전트 제품 UI 판단 원칙
 - `docs/part6-delivery/6.3-delivery-github-deploy.md`
+- `docs/part6-delivery/6.4-agent-product-ui.md`: use: 에이전트 제품 UI 판단 원칙
 
 ## Part 7 — Growth
 
@@ -129,7 +129,7 @@
 
 - `CLAUDE.md` — `~/.claude/CLAUDE.md` 스타터
 - `guides/writing.md` · `review.md` · `evals.md` (lazy load)
-- `skills/polish.md`: `/polish` 글 다듬기 (설치할 때 `~/.claude/skills/polish/SKILL.md` 로 저장해야 로드됨)
+- `skills/polish/SKILL.md`: `/polish` 글 다듬기 (`~/.claude/skills/polish/` 폴더째 복사하면 바로 로드됨)
 
 ### Hooks (`templates/hooks/`)
 

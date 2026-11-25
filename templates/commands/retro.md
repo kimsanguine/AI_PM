@@ -47,7 +47,7 @@ title: chore(retro): WW <NN> 2026 absorb <N> rules
 body:
 
 - ~/.claude/CLAUDE.md: + "<patch>"
-- skills/polish.md: + <patch>
+- skills/polish/SKILL.md: + <patch>
 - 스팸으로 처리: <패턴>
 
 ```

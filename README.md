@@ -190,8 +190,8 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 | --- | --- | --- | --- |
 | 6.1 | [바이브 코딩 + Pencil 연동](./docs/part6-delivery/6.1-delivery-vibe-coding.md) | 의도 기술 → Claude 구현 → PM 리뷰 루프 | J → P |
 | 6.2 | [비주얼 에셋](./docs/part6-delivery/6.2-delivery-visual-assets.md) | 5가지 비주얼 에셋 유형, Gemini API 연동 | P |
-| 6.2 | [에이전트 제품 UI 판단 원칙](./docs/part6-delivery/6.2-agent-product-ui.md) | 투명성·사용자 제어·선제 피드백·에러 복구 4원칙, 에이전트 특화 KPI | P → L |
 | 6.3 | [GitHub 배포](./docs/part6-delivery/6.3-delivery-github-deploy.md) | Git 기초, Vercel 배포, 모니터링 | P |
+| 6.4 | [에이전트 제품 UI 판단 원칙](./docs/part6-delivery/6.4-agent-product-ui.md) | 투명성·사용자 제어·선제 피드백·에러 복구 4원칙, 에이전트 특화 KPI | P → L |
 
 ### Part 7: Growth — 측정과 운영
 

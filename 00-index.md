@@ -100,8 +100,8 @@ PM이 직접 프로토타입을 만들고, 비주얼 에셋을 생성하고, 배
 | --- | --- | --- | --- |
 | 6.1 | [6.1-delivery-vibe-coding.md](./docs/part6-delivery/6.1-delivery-vibe-coding.md) | 의도 기술 → Claude 구현 → PM 리뷰 루프 | J → P |
 | 6.2 | [6.2-delivery-visual-assets.md](./docs/part6-delivery/6.2-delivery-visual-assets.md) | PM을 위한 5가지 비주얼 에셋 유형, Gemini API 연동 | P |
-| 6.2 | [6.2-agent-product-ui.md](./docs/part6-delivery/6.2-agent-product-ui.md) | 에이전트 제품 PM의 UI 판단 원칙, 에이전트 특화 KPI | P → L |
 | 6.3 | [6.3-delivery-github-deploy.md](./docs/part6-delivery/6.3-delivery-github-deploy.md) | PM을 위한 Git 기초, Vercel 배포, 모니터링 | P |
+| 6.4 | [6.4-agent-product-ui.md](./docs/part6-delivery/6.4-agent-product-ui.md) | 에이전트 제품 PM의 UI 판단 원칙, 에이전트 특화 KPI | P → L |
 
 ---
 
