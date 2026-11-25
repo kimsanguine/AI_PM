@@ -44,7 +44,6 @@ cp templates/routine-pack-v1/feature_list.json \
    templates/routine-pack-v1/session-end-checklist.md "$P/"
 ```
 
-챕터 12 본문은 이 체크리스트를 `routine-pack/session-end-checklist.md`로 부릅니다. 이 저장소에서는 `templates/routine-pack-v1/session-end-checklist.md`가 같은 파일입니다.
 
 ## 하루에 쓰는 순서
 
