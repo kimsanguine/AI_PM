@@ -255,7 +255,7 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 
 ### 두 가지 진입로
 
-- **인터랙티브 코스** — 레포를 클론한 뒤 해당 폴더에서 Claude Code 를 열고 `/start` 를 입력하세요. 레벨을 확인한 뒤 `/start-1`·`/start-2`·`/start-3` 트랙으로 직접 손으로 따라 하는 온보딩이 시작됩니다.
+- **인터랙티브 코스** — 레포를 클론한 뒤 `mkdir -p .claude/commands && cp templates/commands/start*.md .claude/commands/` 로 시작 명령을 복사하고, 해당 폴더에서 Claude Code 를 열어 `/start` 를 입력하세요. 레벨을 확인한 뒤 `/start-1`·`/start-2`·`/start-3` 트랙으로 직접 손으로 따라 하는 온보딩이 시작됩니다.
 - **플러그인 설치** — Claude Code 에서 두 줄이면 끝납니다.
 
   ```text
