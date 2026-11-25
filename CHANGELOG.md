@@ -4,6 +4,34 @@
 
 ---
 
+## [v1.9.0] - 2026-11-25
+
+Claude Code 공식 문서(2026-11 사본)와 대조해 사실 오류와 낡은 서술을 고친 라운드다. 구조 개편과 새 챕터는 없다.
+
+### Changed
+
+- 기준 모델을 `claude-opus-4-8`에서 `claude-opus-5-5`로 갱신했다(front-matter, README 배지, 루트 `CLAUDE.md`, agent·skill `model` 필드, 템플릿). Opus 5.5의 effort 기본값은 `medium`이고 thinking은 끌 수 없으므로, "기본값 `high`", "adaptive thinking off-by-default" 서술을 2.2, 1.2, 3.2.2, 루트 `CLAUDE.md`, `templates/claude-home/CLAUDE.md`에서 정정했다.
+- 3.2.2는 4.7·4.8 당시 기준 챕터임을 밝히는 갱신 메모를 달았다(파일명 유지).
+- README·`00-index.md`·`INDEX.md`에 빠져 있던 3.8, 6.2(에이전트 UI) 행과 `templates/routine-pack-v1/` 진입점을 추가했다. README 부제를 "8파트 34챕터 + 부록 12편"으로, 버전 배지를 v1.9로, 루트 `CLAUDE.md`의 `guide_version`을 v1.9로 맞췄다.
+- `.claude-plugin/marketplace.json`의 `ai-pm` 플러그인 버전을 1.1.0으로 올렸다. `version`을 고정한 플러그인은 버전이 바뀌어야 기존 설치본이 갱신된다.
+
+### Fixed
+
+- 스킬 frontmatter의 `trigger:`는 Claude Code가 인식하지 않는 필드라 무시되고 있었다. 8개 스킬과 `templates/claude-home/skills/polish.md`에서 공식 필드 `when_to_use:`로 바꿨다.
+- 2.4, 3.4: `/agents` 대화형 화면은 v2.1.197 이하에서만 열린다. 현재 생성 방법(Claude에게 요청 또는 파일 직접 작성), 필수 frontmatter(`name`, `description`), `@agent-<이름>` 멘션 문법으로 정정했다. A.1의 멘션 예시도 같은 문법으로 고쳤다.
+- 3.4: 스킬 `name` 필드는 입력 명령 이름을 바꾼다(이전 서술은 "바꾸지 않는다"). 예약 실행 세 가지(`/schedule`, 데스크톱 예약 작업, `/loop`)와 클라우드 예약 작업의 개인 스킬 제약을 덧붙였다.
+- 2.3, 3.2: `@파일` import는 세션 시작 시 함께 로드되므로 토큰을 줄이지 않는다. Lazy Loading 서술과 "토큰 80% 절감" 표를 정정했다. 입력 앞 `#` 메모리 단축키는 현재 문서에 없어 "기억해 줘" 방식으로 바꿨고, AGENTS.md는 Claude Code가 직접 읽는 조건(`CLAUDE.md` 없을 때)과 `@AGENTS.md` import 방식으로 정정했다. CLAUDE.md 범위 간 "자동 우선순위" 서술과 로컬 CLAUDE.md 경로(`CLAUDE.local.md`)를 바로잡았다.
+- 2.2: `claude code --auto-accept`, `--plan`은 존재하지 않는 명령이다. `claude --permission-mode acceptEdits|plan`으로 고치고 공식 모드 이름 대응표를 넣었다.
+- 2.7: 훅 이벤트 수 "8가지"를 "30가지 이상(2026-11 기준 33가지)"으로, 훅 handler 타입에 `mcp_tool`·`agent`를 추가했다. exit 1 동작 설명을 non-blocking 오류로 정정했다. `templates/hooks/*.sh` 머리 주석의 설치 예시가 옛 스키마였던 것을 3중 중첩 스키마로 고쳤다.
+- 3.7, 3.8: 폐기된 `anthropics/claude-code` 마켓플레이스 예시를 `claude-plugins-official`로 바꿨다. ralph-loop 설치 명령(`ralph-loop@ai-pm`은 존재하지 않음)을 `ralph-loop@claude-plugins-official`로, 명령을 `/ralph-loop:ralph-loop`로, `--completion-promise`를 "정확히 일치해야 하는 완료 문구"로 정정하고 내장 `/goal`을 비교 대상으로 적었다. `--permission-mode ask`(없는 모드)를 `default`로, 3.7의 스킬 목록을 8종으로 맞췄다.
+- 3.1, 6.1: `claude mcp add <이름> npx -- -y …` 인자 순서를 공식 문법(`<이름> -- npx -y …`)으로 고쳤다. npm에 없는 `@vercel/mcp`, `@anthropic-ai/pencil-mcp-server`와 보관 상태인 `server-github`·`server-postgres`를 원격 서버나 공식 문서 예시(`@bytebase/dbhub`)로 교체했다. 6.1의 이미지 붙여넣기 단축키 `Ctrl+Y`를 `Ctrl+V`로 고쳤다.
+- 3.6: 클라우드 네트워크 접근 수준 이름을 None / Limited / Full로 정정했다.
+- 2.5: Dynamic Workflows는 research preview가 아니라 유료 플랜 전반 기능이고, 프롬프트 키워드는 `ultracode`다. README·`00-index.md`의 "Delegate 모드" 표기를 지웠다.
+- 1.3: npm 설치 경로의 Node.js 요구 버전을 22 이상으로, 플랜 목록에 Ultra를, 타사 제공자 링크를 Claude Code 문서로 갱신했다.
+- A.11, A.12, 5.2: 효과 없는 `think harder about` 권장을 `ultrathink`·`/effort`로 바꾸고, `Esc`+`Esc`·`Shift+Tab` 동작과 출력 스타일 설정 방법을 문서대로 고쳤다. 3.3에 내장 `/status`와의 이름 충돌 주의를 추가했다.
+
+---
+
 ## [v1.8.0] — 2026-08-17
 
 ### Added

@@ -1,8 +1,8 @@
 ---
 chapter: "A.11"
 title: "PM 프롬프트 치트시트"
-claude_model: claude-opus-4-8
-last_updated: 2026-06-02
+claude_model: claude-opus-5-5
+last_updated: 2026-11-25
 ---
 
 # PM 프롬프트 치트시트
@@ -15,7 +15,7 @@ last_updated: 2026-06-02
 
 - **그대로 복사**: 아래 프롬프트의 `대괄호 부분`만 자신의 상황으로 바꿔 붙여넣으세요.
 - **파일 참조 붙이기**: `@파일명` 또는 `@폴더명/`을 앞에 붙이면 그 자료를 읽고 답합니다.
-- **깊이 조절**: 어려운 판단에는 끝에 `think harder about`을 덧붙여 더 깊이 사고하게 만드세요.
+- **깊이 조절**: 어려운 판단에는 프롬프트에 `ultrathink` 를 넣거나 `/effort high` 이상으로 올리세요. `think harder` 같은 표현은 일반 텍스트로 전달될 뿐입니다(아래 참고).
 
 > 여기 예시는 모두 PM 업무 일반에 쓰는 가상 상황입니다. 자신의 실제 회사·고객 데이터로 바꿔서 쓰세요.
 
@@ -47,7 +47,7 @@ last_updated: 2026-06-02
 | 맥락 붙여 PRD 작성 | `@company-context.md @user-research/ 이 자료로 PRD 초안을 작성해줘.` |
 | 핵심 문제 진단 | `이 자료들을 종합해서 우리가 직면한 핵심 문제 하나를 진단해줘.` |
 | 전략 방향 제안 | `위 진단에 기반해서 서로 다른 전략 방향 3가지를 제안하고 각각 설명해줘.` |
-| 전략 사전 검증 | `이 전략을 think harder about 해줘. 실패할 수 있는 시나리오 5개를 만들어줘.` |
+| 전략 사전 검증 | `ultrathink 이 전략을 깊이 검토해줘. 실패할 수 있는 시나리오 5개를 만들어줘.` |
 
 관련 본문: [5.1 PRD 작성](../part5-definition/5.1-definition-write-prd.md) · [5.2 전략 문서 작성](../part5-definition/5.2-definition-product-strategy.md) · [8.1 AI 제품 전략](../part8-strategy/8.1-ai-product-strategy.md)
 

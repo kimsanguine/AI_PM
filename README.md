@@ -2,7 +2,7 @@
 
 # 🚀 Claude Code for PMs — AI 네이티브 PM 실전 가이드
 
-> 한국어 PM 을 위한 **Claude Code 실전 플레이북**. `claude-opus-4-8` 기준, 8파트 + 10 유즈케이스.
+> 한국어 PM 을 위한 **Claude Code 실전 플레이북**. `claude-opus-5-5` 기준, 8파트 34챕터 + 부록 12편.
 >
 > **"도구를 배우는 것이 아니라, PM의 일하는 방식을 재설계한다."**
 >
@@ -12,8 +12,8 @@
 ![Forks](https://img.shields.io/github/forks/kimsanguine/AI_PM?style=social)
 ![Last Commit](https://img.shields.io/github/last-commit/kimsanguine/AI_PM)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-![Claude](https://img.shields.io/badge/Claude-claude--opus--4--8-blue)
-![Version](https://img.shields.io/badge/guide-v1.4-success)
+![Claude](https://img.shields.io/badge/Claude-claude--opus--5--5-blue)
+![Version](https://img.shields.io/badge/guide-v1.9-success)
 
 ---
 
@@ -102,7 +102,7 @@ graph LR
 
 ## 이 가이드는 무엇인가요?
 
-Claude Code(`claude-opus-4-8` 기준 CLI 에이전트)를 활용해 PM이 **Discovery → Definition → Delivery → Growth** 사이클 전반에서 일하는 방식을 어떻게 변화시킬 수 있는지를 다루는 실전 가이드입니다.
+Claude Code(`claude-opus-5-5` 기준 CLI 에이전트)를 활용해 PM이 **Discovery → Definition → Delivery → Growth** 사이클 전반에서 일하는 방식을 어떻게 변화시킬 수 있는지를 다루는 실전 가이드입니다.
 
 단순한 도구 사용법이 아니라, **컨텍스트 인프라를 설계하는 법**을 배웁니다.
 
@@ -151,7 +151,7 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 | 2.2 | [모드와 깊이](./docs/part2-basics/2.2-modes-and-depth.md) | Edit/Auto-Accept/Plan 모드, effort/adaptive thinking | J → P |
 | 2.3 | [프로젝트 메모리](./docs/part2-basics/2.3-project-memory.md) | 메모리 계층 구조, CLAUDE.md 작성법 | P |
 | 2.4 | [커스텀 서브에이전트](./docs/part2-basics/2.4-custom-subagents.md) | 엔지니어/경영진/리서처 에이전트 구성 | P → L |
-| 2.5 | [에이전트 팀](./docs/part2-basics/2.5-agent-teams.md) | 멀티 에이전트 병렬 협업, Delegate 모드 | P → L |
+| 2.5 | [에이전트 팀](./docs/part2-basics/2.5-agent-teams.md) | 멀티 에이전트 병렬 협업, Dynamic Workflows | P → L |
 | 2.6 | [Human-in-the-Loop](./docs/part2-basics/2.6-human-in-the-loop.md) | AI 파트너 철학, 루프 깊이 프레임워크, 가드레일 설계 | 모든 레벨 |
 | 2.7 | [Hooks](./docs/part2-basics/2.7-hooks.md) | SessionStart / PostToolUse / Stop — 폐루프 자동화 | P → L |
 
@@ -168,6 +168,7 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 | 3.5 | [외부 자동화 (n8n)](./docs/part3-advanced/3.5-automation-n8n.md) | 스케줄/이벤트 기반 워크플로우 구축 | P → L |
 | 3.6 | [Claude Code on the web](./docs/part3-advanced/3.6-claude-code-on-the-web.md) | 웹·모바일·GitHub Action 실행 환경, 네트워크 정책, cloud worktree | P → L |
 | 3.7 | [플러그인 & 마켓플레이스](./docs/part3-advanced/3.7-plugins-and-marketplace.md) | 명령·스킬·에이전트·훅·MCP를 한 묶음으로 포장·공유, 마켓플레이스 2단계 설치 | P → L |
+| 3.8 | [ralph-loop 반복 리서치 자동화](./docs/part3-advanced/3.8-ralph-loop-automation.md) | 완료 신호와 반복 상한으로 리서치를 자율 반복, 내장 `/goal` 과 비교 | P → L |
 
 ### Part 4: Discovery — 문제 발견
 
@@ -189,6 +190,7 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 | --- | --- | --- | --- |
 | 6.1 | [바이브 코딩 + Pencil 연동](./docs/part6-delivery/6.1-delivery-vibe-coding.md) | 의도 기술 → Claude 구현 → PM 리뷰 루프 | J → P |
 | 6.2 | [비주얼 에셋](./docs/part6-delivery/6.2-delivery-visual-assets.md) | 5가지 비주얼 에셋 유형, Gemini API 연동 | P |
+| 6.2 | [에이전트 제품 UI 판단 원칙](./docs/part6-delivery/6.2-agent-product-ui.md) | 투명성·사용자 제어·선제 피드백·에러 복구 4원칙, 에이전트 특화 KPI | P → L |
 | 6.3 | [GitHub 배포](./docs/part6-delivery/6.3-delivery-github-deploy.md) | Git 기초, Vercel 배포, 모니터링 | P |
 
 ### Part 7: Growth — 측정과 운영
@@ -245,6 +247,7 @@ PM 시간 배분도 같이 바뀝니다 — 문서 작성·회의·데이터 취
 "CLAUDE.md를 바로 세팅하고 싶어"          → templates/CLAUDE-md-starter.md + templates/claude-home/
 "4.7 시대 CLAUDE.md 작성법이 궁금해"      → 3.2.2-claude-md-for-4-7.md
 "훅으로 업무자동화를 만들고 싶어"               → 2.7-hooks.md + templates/hooks/
+"매일 쓰는 세션 루틴 양식이 필요해"       → templates/routine-pack-v1/
 "샘플 데이터로 실습하고 싶어"             → samples/README.md
 "전체 PM 워크플로우를 한 번에 보고 싶어"   → A.1-running-scenario.md
 "AI 프롬프트 작성법이 궁금해"             → ai-prompts-playbook (AI_PM companion prompt registry)
@@ -273,7 +276,7 @@ AI_PM/
 │
 ├── 1.1 ~ 1.3                       # Part 1: 시작하기
 ├── 2.0 ~ 2.7                       # Part 2: 기본기
-├── 3.1 ~ 3.7                       # Part 3: 고급 설정
+├── 3.1 ~ 3.8                       # Part 3: 고급 설정
 ├── 4.1 ~ 4.2                       # Part 4: Discovery
 ├── 5.1 ~ 5.2                       # Part 5: Definition
 ├── 6.1 ~ 6.3                       # Part 6: Delivery
@@ -296,7 +299,7 @@ AI_PM/
 │   └── agents/                     # engineering-reviewer / exec-advisor / user-researcher
 │
 ├── docs/
-│   └── operations/                 # sot-policy / closed-loop (운영 문서)
+│   └── operations/                 # sot-policy / closed-loop / ai-pm-portfolio / pm-eval-reference
 │
 ├── samples/                        # 실습용 데이터
 │   ├── ab-test-results.csv
@@ -309,7 +312,8 @@ AI_PM/
 │   ├── commands/                   # 14종 — /today /prd /status /discovery /competitor
 │   │                               #   /briefing /review /postmortem /retro /pm-setup
 │   │                               #   /start /start-1 /start-2 /start-3
-│   └── hooks/                      # stop-notify / posttooluse-fmt / sessionstart-load
+│   ├── hooks/                      # stop-notify / posttooluse-fmt / sessionstart-load
+│   └── routine-pack-v1/            # 매일 쓰는 세션 루틴 양식 (CLAUDE.md 3종 · progress · intent sheet 등)
 │
 └── skills/                         # 8종
     ├── prd-generator/

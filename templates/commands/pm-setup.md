@@ -45,7 +45,7 @@
 <반복 작업 · 슬래시/스킬 4섹션 의무 여부>
 
 ## 4. Tools — 도구·모델
-- 모델: claude-opus-4-8
+- 모델: claude-opus-5-5
 <연결할 MCP/도구 · effort 정책>
 
 ## 5. Voice — 톤
@@ -62,7 +62,7 @@
 
 ---
 last_updated: <오늘 날짜>
-claude_model: claude-opus-4-8
+claude_model: claude-opus-5-5
 ```
 
 ### 3단계 — `INDEX.draft.md` (지식 지도)

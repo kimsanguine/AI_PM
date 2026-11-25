@@ -1,9 +1,9 @@
 ---
 name: opportunity-solution-tree
 description: 하나의 outcome 에서 출발해 opportunity → solution → experiment 로 내려가는 트리를 만든다. opportunity 는 발견된 사용자 니즈/페인(솔루션 아님)으로만 적고, solution 은 opportunity 에 매달리며, 각 solution 은 검증 실험으로 닫는다. 출처는 Teresa Torres (Continuous Discovery Habits).
-trigger: |
+when_to_use: |
   "opportunity solution tree", "OST", "발견 트리", "outcome 에서 기회 나열", "솔루션 후보 정리", "어떤 실험부터" 요청 시.
-model: claude-opus-4-8
+model: claude-opus-5-5
 ---
 
 # Skill — Opportunity Solution Tree (OST)

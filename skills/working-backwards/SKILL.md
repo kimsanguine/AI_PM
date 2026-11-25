@@ -1,9 +1,9 @@
 ---
 name: working-backwards
 description: 제품을 출시 시점의 보도자료(PR)와 FAQ 로 먼저 써서, 만들기 전에 고객 가치와 위험을 검증한다. PR 은 과장 없는 고객 언어로, FAQ 는 가장 불편한 질문부터 정직하게 답한다. 출처는 Amazon 의 Working Backwards / PR-FAQ.
-trigger: |
+when_to_use: |
   "working backwards", "PR-FAQ", "보도자료 먼저", "역방향 기획", "출시 보도자료 써줘", "이 제품 진짜 가치 있나" 요청 시.
-model: claude-opus-4-8
+model: claude-opus-5-5
 ---
 
 # Skill — Working Backwards (PR-FAQ)

@@ -1,9 +1,9 @@
 ---
 name: competitor-battlecard
 description: 경쟁사 3–5곳을 동일 축으로 비교한 표 + 배틀카드를 생성한다. 정량/공개 자료만 근거로 사용하고, 추측이나 미확인 정보는 한계 절에 분리한다.
-trigger: |
+when_to_use: |
   "경쟁사 분석", "battlecard 만들어", "competitor 비교", "포지셔닝 표" 요청 시.
-model: claude-opus-4-8
+model: claude-opus-5-5
 ---
 
 # Skill — Competitor Battlecard

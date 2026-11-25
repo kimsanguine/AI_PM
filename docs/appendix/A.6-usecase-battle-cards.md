@@ -1,7 +1,7 @@
 ---
 chapter: "A.6"
 title: "유즈케이스: 경쟁사 배틀 카드 라이브러리 구축"
-claude_model: claude-opus-4-8
+claude_model: claude-opus-5-5
 last_updated: 2026-05-19
 ---
 

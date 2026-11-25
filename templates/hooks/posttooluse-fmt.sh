@@ -10,13 +10,13 @@
 #        {
 #          "hooks": {
 #            "PostToolUse": [{
-#              "matcher": { "tool_name": ["Edit", "Write"] },
-#              "command": "~/.claude/hooks/posttooluse-fmt.sh"
+#              "matcher": "Edit|Write",
+#              "hooks": [{ "type": "command", "command": "~/.claude/hooks/posttooluse-fmt.sh" }]
 #            }]
 #          }
 #        }
 #
-# 환경 변수 CLAUDE_TOOL_RESULT_PATH 또는 stdin 으로 편집된 파일 경로를 받는 것을 가정.
+# Claude Code 는 훅 입력을 stdin JSON 으로 넘긴다. 편집된 파일 경로는 tool_input.file_path 에 있다.
 
 set -euo pipefail
 

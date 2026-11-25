@@ -10,7 +10,9 @@
 #   3. ~/.claude/settings.json 에 등록:
 #        {
 #          "hooks": {
-#            "SessionStart": [{ "command": "~/.claude/hooks/sessionstart-load.sh" }]
+#            "SessionStart": [{
+#              "hooks": [{ "type": "command", "command": "~/.claude/hooks/sessionstart-load.sh" }]
+#            }]
 #          }
 #        }
 #

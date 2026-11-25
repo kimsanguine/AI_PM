@@ -1,8 +1,8 @@
 ---
 chapter: "A.1"
 title: "관통 시나리오: PlanMyDay — 하나의 제품으로 보는 PM 워크플로우 전체"
-claude_model: claude-opus-4-8
-last_updated: 2026-05-19
+claude_model: claude-opus-5-5
+last_updated: 2026-11-25
 ---
 
 # 관통 시나리오: PlanMyDay — 하나의 제품으로 보는 PM 워크플로우 전체
@@ -236,12 +236,12 @@ Day 5 신규 사용자 리텐션 34% → 42% 달성 (Day 7 기준)
 이제 PM은 멀티에이전트 리뷰를 요청합니다:
 
 ```
-> @engineer-reviewer 이 PRD의 기술 실현성을 리뷰해줘.
+> @agent-engineer-reviewer 이 PRD의 기술 실현성을 리뷰해줘.
 >   - 제안 알고리즘의 기술 난이도
 >   - 백엔드 구현 예상 시간
 >   - 위험 요소
 
-> @exec-reviewer 이 PRD의 비즈니스 임팩트를 평가해줘.
+> @agent-exec-reviewer 이 PRD의 비즈니스 임팩트를 평가해줘.
 >   - 예상 리텐션 개선 현실성
 >   - 시장 경쟁력 영향
 >   - 다른 전략과의 우선순위

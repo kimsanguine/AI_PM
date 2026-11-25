@@ -45,7 +45,7 @@ CLI 환경에서 파일을 다루고, 모드를 전환하고, 프로젝트 메�
 | 2.2 | [2.2-modes-and-depth.md](./docs/part2-basics/2.2-modes-and-depth.md) | Edit/Auto-Accept/Plan 모드, think/ultrathink | J → P |
 | 2.3 | [2.3-project-memory.md](./docs/part2-basics/2.3-project-memory.md) | 메모리 계층 구조, PM 프로젝트용 CLAUDE.md 작성법 | P |
 | 2.4 | [2.4-custom-subagents.md](./docs/part2-basics/2.4-custom-subagents.md) | .claude/agents/ 파일 작성, 엔지니어/경영진/리서처 에이전트 | P → L |
-| 2.5 | [2.5-agent-teams.md](./docs/part2-basics/2.5-agent-teams.md) | 에이전트 팀: 멀티 에이전트 병렬 협업, Delegate 모드, 태스크 의존성 | P → L |
+| 2.5 | [2.5-agent-teams.md](./docs/part2-basics/2.5-agent-teams.md) | 에이전트 팀: 멀티 에이전트 병렬 협업, 태스크 의존성, Dynamic Workflows | P → L |
 | 2.6 | [2.6-human-in-the-loop.md](./docs/part2-basics/2.6-human-in-the-loop.md) | Human-in-the-Loop: AI 파트너 철학, 루프 깊이 프레임워크, 가드레일 설계 | 모든 레벨 |
 | 2.7 | [2.7-hooks.md](./docs/part2-basics/2.7-hooks.md) | Hooks: SessionStart/PostToolUse/Stop 등 이벤트 기반 자동화 | P → L |
 
@@ -66,6 +66,7 @@ Claude Code의 자동화 인프라를 구축하고 고도화하는 심화 설정
 | 3.5 | [3.5-automation-n8n.md](./docs/part3-advanced/3.5-automation-n8n.md) | 외부 자동화: n8n으로 스케줄/이벤트 기반 워크플로우 구축 | P → L |
 | 3.6 | [3.6-claude-code-on-the-web.md](./docs/part3-advanced/3.6-claude-code-on-the-web.md) | Claude Code 실행 표면: CLI / web·mobile / GitHub Action / cloud | P → L |
 | 3.7 | [3.7-plugins-and-marketplace.md](./docs/part3-advanced/3.7-plugins-and-marketplace.md) | 플러그인: 명령·스킬·에이전트·훅·MCP를 한 묶음으로 포장·공유, 마켓플레이스 2단계 설치 | P → L |
+| 3.8 | [3.8-ralph-loop-automation.md](./docs/part3-advanced/3.8-ralph-loop-automation.md) | ralph-loop 반복 리서치 자동화, 내장 `/goal` 과 비교 | P → L |
 
 ---
 
@@ -99,6 +100,7 @@ PM이 직접 프로토타입을 만들고, 비주얼 에셋을 생성하고, 배
 | --- | --- | --- | --- |
 | 6.1 | [6.1-delivery-vibe-coding.md](./docs/part6-delivery/6.1-delivery-vibe-coding.md) | 의도 기술 → Claude 구현 → PM 리뷰 루프 | J → P |
 | 6.2 | [6.2-delivery-visual-assets.md](./docs/part6-delivery/6.2-delivery-visual-assets.md) | PM을 위한 5가지 비주얼 에셋 유형, Gemini API 연동 | P |
+| 6.2 | [6.2-agent-product-ui.md](./docs/part6-delivery/6.2-agent-product-ui.md) | 에이전트 제품 PM의 UI 판단 원칙, 에이전트 특화 KPI | P → L |
 | 6.3 | [6.3-delivery-github-deploy.md](./docs/part6-delivery/6.3-delivery-github-deploy.md) | PM을 위한 Git 기초, Vercel 배포, 모니터링 | P |
 
 ---

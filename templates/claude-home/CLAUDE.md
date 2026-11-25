@@ -26,9 +26,9 @@
 
 ## think / effort
 
-- 다단계 추론(전략·아키텍처·trade-off 비교)일 때만 think 를 켠다.
+- 다단계 추론(전략·아키텍처·trade-off 비교)일 때는 effort 를 올리거나 그 턴에 `ultrathink` 를 적는다.
 - 코딩·에이전트 작업은 `effort: xhigh`, 리뷰는 `high`, 단순 lookup 은 `medium`.
-- adaptive thinking 은 off-by-default. 필요 시 명시적으로 켠다.
+- adaptive thinking 은 Opus 5.5에서 항상 켜져 있고 끌 수 없다. Opus 5.5의 기본 effort 는 `medium` 이다.
 
 ## 도구 사용
 
@@ -46,7 +46,7 @@
 
 ## 모델 ID
 
-- 기본 모델은 `claude-opus-4-8`.
+- 기본 모델은 `claude-opus-5-5`.
 - 마케팅 이름 ("Claude 4 Opus" 등) 사용 금지. 항상 정자.
 
 ---

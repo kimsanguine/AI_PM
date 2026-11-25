@@ -1,9 +1,9 @@
 ---
 name: experiment-analyzer
 description: A/B 테스트·실험 결과 CSV/표를 받아 PM 보고용 결과 절 + ship/iterate/kill 권고를 출력한다. 가드레일 위반·표본 편향·novelty 효과를 항상 점검한다.
-trigger: |
+when_to_use: |
   "A/B 결과 분석", "실험 결과 봐줘", "ship 해야 하나", "통계적으로 유의해?" 요청 시.
-model: claude-opus-4-8
+model: claude-opus-5-5
 ---
 
 # Skill — Experiment Analyzer

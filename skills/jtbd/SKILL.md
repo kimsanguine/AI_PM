@@ -1,9 +1,9 @@
 ---
 name: jtbd
 description: 인터뷰·기능 요청을 "사람들이 해결하려는 job(과업)" 으로 재구성한다. 기능·솔루션 언어를 상황(when)·동기(want)·기대 결과(so I can) 의 job statement 로 환원하고, 근거 없는 job 은 가설로만 표기한다. 출처는 Clayton Christensen / Anthony Ulwick.
-trigger: |
+when_to_use: |
   "JTBD", "Jobs to be Done", "job statement", "고객이 왜 산다", "기능 요청을 재해석", "이 기능 진짜 필요한가" 요청 시.
-model: claude-opus-4-8
+model: claude-opus-5-5
 ---
 
 # Skill — Jobs-to-be-Done (JTBD)

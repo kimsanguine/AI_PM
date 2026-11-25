@@ -1,7 +1,7 @@
 ---
 chapter: "A.10"
 title: "유즈케이스: 크로스 플랫폼 콘텐츠 적응"
-claude_model: claude-opus-4-8
+claude_model: claude-opus-5-5
 last_updated: 2026-05-19
 ---
 

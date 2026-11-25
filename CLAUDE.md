@@ -16,7 +16,7 @@
 
 - 언어: 한국어 본문 + 필요한 영어 용어(원어 유지).
 - 구조: H2/H3 + 짧은 표. 불릿 남발 금지. 한 절 = 한 주장.
-- 코드/명령은 펜스 블록. 모델 ID는 `claude-opus-4-8` 정자.
+- 코드/명령은 펜스 블록. 모델 ID는 `claude-opus-5-5` 정자.
 - 모델 마케팅 이름(`Claude 4 Opus` 등) 사용 금지.
 - 챕터 본문 분량 가이드: 8–25KB.
 
@@ -39,9 +39,9 @@
 
 ## 4. Tools — 도구·모델
 
-- 모델: `claude-opus-4-8`.
+- 모델: `claude-opus-5-5`.
 - effort: **xhigh** (편집/에이전트 작업), **high** (리뷰), **medium** (단순 lookup).
-- thinking: adaptive (off-by-default). 다단계 추론이 필요할 때만 켠다.
+- thinking: adaptive. Opus 5.5에서는 항상 켜져 있고 끌 수 없다. 깊이는 effort 로 조절한다(Opus 5.5 기본값 `medium`).
 - 컨텍스트: 1M. 안정 영역(이 파일, `INDEX.md`)을 상단에 둬 prompt caching 적중률을 높인다.
 - MCP: Notion / GitHub / n8n. SoT 정책은 `docs/operations/sot-policy.md`.
 - Hooks: `templates/hooks/` 의 3종 스크립트를 `~/.claude/hooks/` 로 복사하면 SessionStart / PostToolUse / Stop 폐루프가 작동.
@@ -90,6 +90,6 @@
 
 ---
 
-last_updated: 2026-06-02
-claude_model: claude-opus-4-8
-guide_version: v1.4
+last_updated: 2026-11-25
+claude_model: claude-opus-5-5
+guide_version: v1.9

@@ -1,7 +1,7 @@
 ---
 chapter: "A.7"
 title: "유즈케이스: 데이터 기반 고객 페르소나 구축"
-claude_model: claude-opus-4-8
+claude_model: claude-opus-5-5
 last_updated: 2026-05-19
 ---
 

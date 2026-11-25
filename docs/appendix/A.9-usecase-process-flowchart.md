@@ -1,7 +1,7 @@
 ---
 chapter: "A.9"
 title: "유즈케이스: 제품 프로세스 플로우차트 문서화"
-claude_model: claude-opus-4-8
+claude_model: claude-opus-5-5
 last_updated: 2026-05-19
 ---
 

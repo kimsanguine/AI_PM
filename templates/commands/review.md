@@ -50,7 +50,7 @@
 ### high
 - L42: "Claude 4 Opus" 사용
   - 문제: 마케팅 이름 금지(CLAUDE.md 룰).
-  - 제안: `claude-opus-4-8`
+  - 제안: `claude-opus-5-5`
 </good>
 <bad>
 전반적으로 좋아 보이고 머지해도 될 듯합니다.

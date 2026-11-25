@@ -1,7 +1,7 @@
 ---
 name: polish
 description: 작성된 글의 톤·문장·단어를 다듬는다. 의미는 바꾸지 않는다.
-trigger: /polish
+when_to_use: 사용자가 /polish 를 부르거나 글의 톤·문장 다듬기를 요청할 때.
 ---
 
 # /polish — 글 다듬기 스킬

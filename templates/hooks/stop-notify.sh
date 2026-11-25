@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Stop hook — Claude Code 세션이 종료될 때 소리/알림으로 통보.
+# Stop hook: Claude 가 응답을 마칠 때마다 소리/알림으로 통보(세션 종료는 SessionEnd 이벤트).
 # 병렬 세션(3~6개) 운영 시 어느 세션이 끝났는지 즉시 알 수 있게 한다.
 #
 # 설치:
@@ -9,7 +9,9 @@
 #   3. ~/.claude/settings.json 에 등록:
 #        {
 #          "hooks": {
-#            "Stop": [{ "command": "~/.claude/hooks/stop-notify.sh" }]
+#            "Stop": [{
+#              "hooks": [{ "type": "command", "command": "~/.claude/hooks/stop-notify.sh" }]
+#            }]
 #          }
 #        }
 

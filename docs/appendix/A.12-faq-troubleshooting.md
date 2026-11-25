@@ -1,8 +1,8 @@
 ---
 chapter: "A.12"
 title: "FAQ·트러블슈팅 허브"
-claude_model: claude-opus-4-8
-last_updated: 2026-06-02
+claude_model: claude-opus-5-5
+last_updated: 2026-11-25
 ---
 
 # FAQ·트러블슈팅 허브
@@ -41,12 +41,12 @@ last_updated: 2026-06-02
 | 단축키 | 기능 | 언제 쓰나 |
 |---|---|---|
 | `ESC` | 현재 실행 중인 작업 즉시 취소 | Claude가 잘못된 방향으로 가고 있을 때 |
-| `ESC` + `ESC` (연속) | 직전 메시지 회귀 | 보낸 메시지를 보내기 직전으로 롤백 |
+| `ESC` + `ESC` (연속) | 입력 중이면 입력 지우기, 입력창이 비어 있으면 되감기(rewind) 메뉴 | 보낸 메시지 이전 시점으로 대화·코드 되돌리기 (`/rewind` 와 같음) |
 | `Shift` + `Enter` | 줄바꿈 입력 (`/terminal-setup` 실행 후) | 긴 프롬프트 여러 줄 입력 |
-| `Shift` + `Tab` | 모드 전환 | 일반 → 자동승인 → 플래닝 → 스킵 순환 |
+| `Shift` + `Tab` | 권한 모드 전환 | Manual → Accept edits → Plan 순환 (켜 둔 경우 bypassPermissions·Auto 까지) |
 | `Tab` | 경로 자동완성 | 파일·폴더 경로 입력 시 |
 
-> **ESC+ESC 활용 팁**: Claude가 잘못된 가정으로 작업을 시작했다면, ESC+ESC로 그 메시지를 보내기 전 상태로 돌아가 다시 입력할 수 있습니다. 잘못된 컨텍스트가 누적되는 것을 방지합니다.
+> **ESC+ESC 활용 팁**: Claude가 잘못된 가정으로 작업을 시작했다면, 입력창이 빈 상태에서 ESC+ESC로 되감기 메뉴를 열어 그 메시지를 보내기 전 상태로 돌아가 다시 입력할 수 있습니다. 잘못된 컨텍스트가 누적되는 것을 방지합니다.
 
 ### 경로 탭 자동완성
 
@@ -86,7 +86,7 @@ claude -r "habix legal"
 
 ## Explanatory Output: 설명형 출력 포맷 설정
 
-Claude Code의 출력 스타일은 `/config`에서 설정할 수 있습니다. **Explanatory(설명형)**은 초급자에게 특히 중요한 설정입니다.
+Claude Code의 출력 스타일은 `/config` 의 **Output style** 메뉴나 `/output-style explanatory` 명령으로 설정할 수 있습니다. **Explanatory(설명형)**은 초급자에게 특히 중요한 설정입니다.
 
 ### 설정 방법
 

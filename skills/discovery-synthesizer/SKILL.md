@@ -1,9 +1,9 @@
 ---
 name: discovery-synthesizer
 description: 인터뷰 트랜스크립트·설문·사용 로그를 받아 PM 이 의사결정할 수 있는 인사이트 표로 합성한다. 빈도가 낮은 신호는 "약한 신호" 로만 표기하고 인사이트로 승격하지 않는다.
-trigger: |
+when_to_use: |
   사용자가 인터뷰·설문·사용 로그 파일을 첨부하면서 "합성", "정리", "인사이트", "패턴 찾아줘" 라고 요청할 때.
-model: claude-opus-4-8
+model: claude-opus-5-5
 ---
 
 # Skill — Discovery Synthesizer

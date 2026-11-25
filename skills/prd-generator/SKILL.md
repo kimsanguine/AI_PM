@@ -1,7 +1,7 @@
 ---
 name: prd-generator
 description: "소크라틱 질문 기반 PRD 생성 — PM의 가정을 도전하고, 복수 옵션을 제시하며, 견고한 PRD를 만드는 AI PM 스킬"
-trigger: "PRD 작성, PRD 생성, 기능 정의, 제품 요구사항, 기능 기획, feature spec"
+when_to_use: "PRD 작성, PRD 생성, 기능 정의, 제품 요구사항, 기능 기획, feature spec"
 version: 1.0
 created: 2026-02-25
 author: Sanguine Kim (kimsanguine@gmail.com)

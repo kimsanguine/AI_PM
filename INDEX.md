@@ -44,6 +44,7 @@
 - `docs/part3-advanced/3.5-automation-n8n.md` — use: 외부 자동화
 - `docs/part3-advanced/3.6-claude-code-on-the-web.md` — use: 웹·모바일·GitHub Action 실행 환경
 - `docs/part3-advanced/3.7-plugins-and-marketplace.md` — use: 플러그인 묶음 배포 + 마켓플레이스 2단계 설치
+- `docs/part3-advanced/3.8-ralph-loop-automation.md`: use: ralph-loop 반복 리서치 자동화, 내장 `/goal` 비교
 
 ## Part 4 — Discovery
 
@@ -59,6 +60,7 @@
 
 - `docs/part6-delivery/6.1-delivery-vibe-coding.md`
 - `docs/part6-delivery/6.2-delivery-visual-assets.md`
+- `docs/part6-delivery/6.2-agent-product-ui.md`: use: 에이전트 제품 UI 판단 원칙
 - `docs/part6-delivery/6.3-delivery-github-deploy.md`
 
 ## Part 7 — Growth
@@ -127,7 +129,7 @@
 
 - `CLAUDE.md` — `~/.claude/CLAUDE.md` 스타터
 - `guides/writing.md` · `review.md` · `evals.md` (lazy load)
-- `skills/polish.md` — `/polish` 글 다듬기
+- `skills/polish.md`: `/polish` 글 다듬기 (설치할 때 `~/.claude/skills/polish/SKILL.md` 로 저장해야 로드됨)
 
 ### Hooks (`templates/hooks/`)
 
@@ -149,6 +151,7 @@
 ### 기타
 
 - `templates/CLAUDE-md-starter.md` — 새 프로젝트용 CLAUDE.md 스타터
+- `templates/routine-pack-v1/`: 매일 쓰는 세션 루틴 양식 5종(CLAUDE.md 3종 변형, feature_list.json, progress.md, intent_sheet.md, session-end-checklist.md)
 
 ## 샘플 데이터
 
@@ -173,4 +176,4 @@
 
 ---
 
-last_updated: 2026-06-02
+last_updated: 2026-11-25

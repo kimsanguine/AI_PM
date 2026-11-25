@@ -1,7 +1,7 @@
 ---
 chapter: "A.5"
 title: "유즈케이스: 프로젝트 상태 보고서 자동 생성"
-claude_model: claude-opus-4-8
+claude_model: claude-opus-5-5
 last_updated: 2026-05-19
 ---
 

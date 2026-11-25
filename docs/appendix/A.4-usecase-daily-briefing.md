@@ -1,7 +1,7 @@
 ---
 chapter: "A.4"
 title: "유즈케이스: PM 일일 브리핑 자동화"
-claude_model: claude-opus-4-8
+claude_model: claude-opus-5-5
 last_updated: 2026-05-19
 ---
 
