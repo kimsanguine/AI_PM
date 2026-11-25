@@ -24,3 +24,12 @@
 
 # 자매 저장소 hplan — 비공개(시그니처) 저장소라 익명 접근 404, 공개 시 정상 동작
 ^https://github\.com/kimsanguine/hplan
+
+# OpenDART 개발가이드 — 서버 TLS 설정이 lychee(rustls)와 호환되지 않아 HandshakeFailure 발생. 브라우저·curl 에서는 정상 (2026-10 확인)
+^https://opendart\.fss\.or\.kr/
+
+# 잡코리아 검색 결과 페이지 — 동적 검색 스냅샷이라 외부 검증 의미 없음. CI 러너에서 20초 타임아웃 반복 (2026-10 확인). 개별 공고(GI_Read)는 계속 검증
+^https://www\.jobkorea\.co\.kr/Search
+
+# 공공데이터포털(data.go.kr) — 서버 응답이 불안정해 CI 러너와 외부 네트워크 모두에서 타임아웃·connection reset 반복 (2026-10 측정: 같은 URL이 2초 응답과 40초 타임아웃을 오감). 브라우저에서는 정상
+^https://(www\.)?data\.go\.kr/
